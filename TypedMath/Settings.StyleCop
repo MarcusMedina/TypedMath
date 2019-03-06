@@ -1,0 +1,25 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>bool</Value>
+      <Value>int</Value>
+      <Value>substracts</Value>
+      <Value>uint</Value>
+      <Value>ulong</Value>
+      <Value>ushort</Value>
+      <Value>sbyte</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+  <Analyzers>
+    <Analyzer AnalyzerId="StyleCop.CSharp.ReadabilityRules">
+      <Rules>
+        <Rule Name="PrefixLocalCallsWithThis">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+      </Rules>
+      <AnalyzerSettings />
+    </Analyzer>
+  </Analyzers>
+</StyleCopSettings>
