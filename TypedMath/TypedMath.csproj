@@ -54,5 +54,8 @@
     <Compile Include="TypedMathUlongExtension.cs" />
     <Compile Include="TypedMathUshortExtension.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
