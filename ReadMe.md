@@ -27,7 +27,7 @@ using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 ```
 
 This is a DLL project, use it if you want. It's published with GNU public license 3. 
-If someone find it usable I will make a nuget of it :)
+If you want to try it, here's the nuget: https://www.nuget.org/packages/TypedMath
 
 Cheers.
 Marcus
