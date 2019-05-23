@@ -7,6 +7,7 @@
 
 namespace MarcusMedinaPro.TypedMath.IntExtension
 {
+
     /// <summary>
     /// Defines the <see cref="TypedMathIntExtension"/>
     /// </summary>

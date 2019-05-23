@@ -28,6 +28,8 @@ using MarcusMedinaPro.TypedMath.UintExtension; // Uint
 using MarcusMedinaPro.TypedMath.UlongExtension; //Ulong
 using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 ```
+Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
+
 
 ## Examples
 Here is the list of functions available for most of the types. In this example I'm using *double*
@@ -102,7 +104,7 @@ Divide, Multiply and Modulus are also available
 ```C#
     // double DividedBy(...);
     int x = 10;
-    int y = 12;
+    double y = 12;
     var res = y.DividedBy(x);
 
     // double MultipliedWith(...);
@@ -128,10 +130,10 @@ Cast to another type if you don't like using  var x=(int)myDouble;
     var i = y.CastDoubleToInt();
 
     // long CastDoubleToLong(...);
-    var l =  = y.CastDoubleToLong();
+    var l  = y.CastDoubleToLong();
 
     // sbyte CastDoubleToSbyte(...);
-    var sb= = y.CastDoubleToSbyte(); 
+    var sb = y.CastDoubleToSbyte(); 
 
     // short CastDoubleToShort(...);
     var sh= y.CastDoubleToShort()
@@ -143,7 +145,17 @@ Cast to another type if you don't like using  var x=(int)myDouble;
     var ul = y.CastDoubleToLong();
 
     // ushort CastDoubleToUshort(...);
-    var usr= = y.CastDoubleToUShort();
+    var usr = y.CastDoubleToUShort();
+```
+
+You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right on the types that works with those operations (Int, short, sbyte etc)
+```C#
+    var test1 = 10.And(2);
+    var test2 = 12.Or(2);
+    var test3 = 14.Xor(2);
+    var test4 = 16.Not();
+    var test5 = 42.ShiftLeft();
+    var test6 = 24.ShiftRight();
 ```
 
 ## Source code
