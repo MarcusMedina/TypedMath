@@ -1,8 +1,9 @@
 ﻿# Typed Math
-This is a completly meaningsless project that I created a day when I had a bit of a Visual Basic nostalgia. If there is one thing I love about Visual Basic is how the code becomes sort of a story to read.
+Sometimes when working with calculations I tend to get a touch of Dyscalculia. To avoid this from happening I created this project.
+At first it seemed like a pretty meaningless project, but soon I realized this could be useful. So I made it a nuget.
+It's all extensions to number types.
 
-So I decided to use words instead of operators when doing calculations. To make my calculations more readble for future use.
-instead of writing
+Instead of writing
 ```C#
 var x = 10 * 32 + y;
 ```
@@ -10,6 +11,8 @@ you can write
 ```C#
 var x = 10.MultipliedWith(32).Add(y);
 ```
+
+The package contains namespaces for each of the data types in Visual Studio.
 
 To use the extensions use any of the namespaces
 ```C#
@@ -26,8 +29,134 @@ using MarcusMedinaPro.TypedMath.UlongExtension; //Ulong
 using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 ```
 
-This is a DLL project, use it if you want. It's published with GNU public license 3. 
-If someone find it usable I will make a nuget of it :)
+## Examples
+Here is the list of functions available for most of the types. In this example I'm using *double*
+```C#
+using MarcusMedinaPro.TypedMath.DoubleExtension; // Double
+```
+Compares the current double to a value of almost any type.
+
+```C#
+    // bool GreaterThan(...);
+    int x=10;
+    double y=15.2;
+    if (y.GreaterThan(x))
+    { 
+        // Do something
+    }
+
+    // bool LessThan(...);
+    if (y.LessThan(x))
+    { 
+        // Do something
+    }
+```
+
+Compare if the numbers are equal or not
+(this can be tricky when using decimals though)
+```C#
+    // bool IsEqual(...);
+    int x=10;
+    double y=15.2;
+    if (x.IsEqual(y))
+    { 
+        // Do something
+    }
+
+    // bool IsNotEqual(...);
+    if (x.IsNotEqual(y))
+    { 
+        // Do something
+    }
+```
+
+Check if the value is positive or negative
+```C#
+    // bool IsNegative();
+
+    double y=-2;
+    if (y.IsNegative())
+    { 
+        // Do something
+    }
+
+    // bool IsPositive();
+    if (y.Positive())
+    { 
+        // Do something
+    }
+```
+
+Add and Substract can also be done in typed form.
+```C#
+    // double Add(...);
+    double y = 12;
+    int x=14;
+    var res = y.add(x);
+
+    // double Substract(...);
+    res = y.Substract(x);
+```
+
+Divide, Multiply and Modulus are also available
+```C#
+    // double DividedBy(...);
+    int x = 10;
+    int y = 12;
+    var res = y.DividedBy(x);
+
+    // double MultipliedWith(...);
+    res = y.MultipliedWith(x);
+
+    // double Modulus(...);
+    res = y.Modulus(x);
+```
+
+Cast to another type if you don't like using  var x=(int)myDouble;
+```C#
+    // byte CastDoubleToByte();
+    double y = 13.37;
+    var b= y.CastDoubleToByte()
+
+    // char CastDoubleToChar();
+    var c = y.CastDoubleToChar();
+
+    // decimal CastDoubleToDecimal();
+    var d = y.CastDoubleToDecimal()    
+
+    // int CastDoubleToInt();
+    var i = y.CastDoubleToInt();
+
+    // long CastDoubleToLong(...);
+    var l =  = y.CastDoubleToLong();
+
+    // sbyte CastDoubleToSbyte(...);
+    var sb= = y.CastDoubleToSbyte(); 
+
+    // short CastDoubleToShort(...);
+    var sh= y.CastDoubleToShort()
+    
+    // uint CastDoubleToUint(...);
+    var ui = y.CastDoubleToUint();
+    
+    // ulong CastDoubleToUlong(...);
+    var ul = y.CastDoubleToLong();
+
+    // ushort CastDoubleToUshort(...);
+    var usr= = y.CastDoubleToUShort();
+```
+
+## Source code
+You can find the code at https://github.com/MarcusMedina/TypedMath
+
+## Nuget
+The nuget is available at https://www.nuget.org/packages/TypedMath/
+
+## Collaboration
+Feel free to add suggest or send a pull request to my github.
+
+## Thanks
+* The icon is GPL from http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html.
 
 Cheers.
 Marcus

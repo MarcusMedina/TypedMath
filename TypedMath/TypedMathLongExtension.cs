@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathLongExtension.cs" company="MarcusMedinaPro">
-// By Marcus Medina, 2019 - http://MarcusMedina.Pro 
+// By Marcus Medina, 2019 - http://MarcusMedina.Pro
 // This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
@@ -8,7 +8,7 @@
 namespace MarcusMedinaPro.TypedMath.LongExtension
 {
     /// <summary>
-    /// Defines the <see cref="TypedMathLongExtension" />
+    /// Defines the <see cref="TypedMathLongExtension"/>
     /// </summary>
     public static class TypedMathLongExtension
     {
