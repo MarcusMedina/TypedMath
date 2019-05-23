@@ -1,13 +1,14 @@
 //----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathIntExtension.cs" company="MarcusMedinaPro">
-// By Marcus Medina, 2019 - http://MarcusMedina.Pro 
+// By Marcus Medina, 2019 - http://MarcusMedina.Pro
 // This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
+
 namespace MarcusMedinaPro.TypedMath.IntExtension
 {
     /// <summary>
-    /// Defines the <see cref="TypedMathIntExtension" />
+    /// Defines the <see cref="TypedMathIntExtension"/>
     /// </summary>
     public static class TypedMathIntExtension
     {
