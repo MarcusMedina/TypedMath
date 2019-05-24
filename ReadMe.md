@@ -29,6 +29,7 @@ using MarcusMedinaPro.TypedMath.UlongExtension; //Ulong
 using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 ```
 Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
+## Changes
 
 
 ## Examples
