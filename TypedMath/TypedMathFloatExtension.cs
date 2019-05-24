@@ -1,3 +1,9 @@
+//----------------------------------------------------------------------------------------------
+// <copyright file="TypedMathFloatExtension" company="MarcusMedinaPro">
+// By Marcus Medina, 2019 - http://MarcusMedina.Pro 
+// This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.
+// </copyright>
+// ----------------------------------------------------------------------------------------------
 namespace MarcusMedinaPro.TypedMath.FloatExtension
 {
     using System;
@@ -19,6 +25,57 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// <param name="number">The number</param>
         /// <returns>True if the number is prime</returns>
         public static bool IsPrime(this float number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
+        /// <summary>
+        /// Compare original and second number
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <returns>The highest of the two numbers</returns>
+        public static float ChooseHighestValue(this float first, float second) => first > second ? first : second;
+
+        /// <summary>
+        /// Compare original and second number
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <returns>The lowest of the two numbers</returns>
+        public static float ChooseLowestValue(this float first, float second) => first < second ? first : second;
+
+        /// <summary>
+        /// Swaps two variables 
+        /// </summary>
+        /// <param name="first">The main variable</param>
+        /// <param name="second">The variable to switch with</param>
+        /// <returns>The value from the second variable and sets second variable to original value</returns>
+        public static float SwapWith(this float first, ref float second)
+        {
+            var tmp = second;
+            second = first;
+            return tmp;
+        }
+        /// <summary>
+        /// Gets the percent of the value
+        /// </summary>
+        /// <param name="percent">The amount of percent</param>
+        /// <param name="value">The value</param>
+        /// <returns>The percent</returns>
+        public static float PercentOf(this float percent, float value) => (float)(((float)percent) / ((float)100) * ((float)value));
+
+        /// <summary>
+        /// Adds the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static float AddPercent(this float value, float percent) => (float)(value + value.PercentOf(percent));
+
+        /// <summary>
+        /// Substracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static float SubstractPercent(this float value, float percent) => (float)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Substracts byte from float

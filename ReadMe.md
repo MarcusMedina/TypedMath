@@ -71,7 +71,17 @@ Compare if the numbers are equal or not
     { 
         // Do something
     }
+
 ```
+You could go wild and crazy and write
+```C#
+    if (!x.IsNotEqual(y))
+    { 
+        // Do something
+    }
+
+``
+But that would make the code look weird.
 
 Check if the value is positive or negative
 ```C#

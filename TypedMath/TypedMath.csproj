@@ -60,9 +60,6 @@
     <Compile Include="TypedMathUshortExtension.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.md" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Icons8-Ios7-Science-Math.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
