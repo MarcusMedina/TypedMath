@@ -158,6 +158,13 @@ You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right
     var test6 = 24.ShiftRight();
 ```
 
+Another nifty function is to be able to check if the current number is a prime number.
+
+```C#
+var x = 5.IsPrime();
+```
+
+
 ## Source code
 You can find the code at https://github.com/MarcusMedina/TypedMath
 
@@ -166,6 +173,9 @@ The nuget is available at https://www.nuget.org/packages/TypedMath/
 
 ## Collaboration
 Feel free to add suggest or send a pull request to my github.
+
+## Borrowed code
+* IsPrime() : http://www.codinghelmet.com/articles/linq-all-primes/
 
 ## Thanks
 * The icon is GPL from http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html.
