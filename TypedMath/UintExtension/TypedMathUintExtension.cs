@@ -1,59 +1,123 @@
 //----------------------------------------------------------------------------------------------
-// <copyright file="TypedMathDecimalExtension" company="MarcusMedinaPro">
-// By Marcus Medina, 2019 - http://MarcusMedina.Pro 
+// <copyright file="TypedMathUintExtension" company="MarcusMedinaPro">
+// By Marcus Medina, 2019 - http://MarcusMedina.Pro
 // This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-namespace MarcusMedinaPro.TypedMath.DecimalExtension
+namespace MarcusMedinaPro.TypedMath.UintExtension
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
-    public static class TypedMathDecimalExtension
+    public static class TypedMathUintExtension
     {
-
         /// <summary>
-        /// Gets the NOT of decimal
+        /// Adds byte to uint
         /// </summary>
         /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal Not(this decimal x) =>(decimal) ~ (int)x;
-        /// <summary>
-        /// Compare original and second number
-        /// </summary>
-        /// <param name="first">The number</param>
-        /// <param name="second">The number to compare with</param>
-        /// <returns>The highest of the two numbers</returns>
-        public static decimal ChooseHighestValue(this decimal first, decimal second) => first > second ? first : second;
+        public static uint Add(this uint x, byte y) => x + (uint)y;
 
         /// <summary>
-        /// Compare original and second number
+        /// Adds char to uint
         /// </summary>
-        /// <param name="first">The number</param>
-        /// <param name="second">The number to compare with</param>
-        /// <returns>The lowest of the two numbers</returns>
-        public static decimal ChooseLowestValue(this decimal first, decimal second) => first < second ? first : second;
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, char y) => x + (uint)y;
 
         /// <summary>
-        /// Swaps two variables 
+        /// Adds decimal to uint
         /// </summary>
-        /// <param name="first">The main variable</param>
-        /// <param name="second">The variable to switch with</param>
-        /// <returns>The value from the second variable and sets second variable to original value</returns>
-        public static decimal SwapWith(this decimal first, ref decimal second)
-        {
-            var tmp = second;
-            second = first;
-            return tmp;
-        }
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, decimal y) => x + (uint)y;
+
         /// <summary>
-        /// Gets the percent of the value
+        /// Adds double to uint
         /// </summary>
-        /// <param name="percent">The amount of percent</param>
-        /// <param name="value">The value</param>
-        /// <returns>The percent</returns>
-        public static decimal PercentOf(this decimal percent, decimal value) => (decimal)(((decimal)percent) / ((decimal)100) * ((decimal)value));
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, double y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds float to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, float y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds int to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, int y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds long to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, long y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds sbyte to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, sbyte y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds short to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, short y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds uint to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, uint y) => x + y;
+
+        /// <summary>
+        /// Adds ulong to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, ulong y) => x + (uint)y;
+
+        /// <summary>
+        /// Adds ushort to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Add(this uint x, ushort y) => x + (uint)y;
 
         /// <summary>
         /// Adds the percent of the value
@@ -61,7 +125,1202 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static decimal AddPercent(this decimal value, decimal percent) => (decimal)(value + value.PercentOf(percent));
+        public static uint AddPercent(this uint value, uint percent) => (uint)(value + value.PercentOf(percent));
+
+        /// <summary>
+        /// Gets the AND of byte and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, byte y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of char and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, char y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of decimal and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, decimal y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of double and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, double y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of float and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, float y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of int and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, int y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of long and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, long y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of sbyte and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, sbyte y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of short and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, short y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of uint and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, uint y) => x & y;
+
+        /// <summary>
+        /// Gets the AND of ulong and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, ulong y) => x & (uint)y;
+
+        /// <summary>
+        /// Gets the AND of ushort and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint And(this uint x, ushort y) => x & (uint)y;
+
+        /// <summary>
+        /// Tries to cast uint to byte, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte CastUintToByte(this uint x) => (byte)x;
+
+        /// <summary>
+        /// Tries to cast uint to char, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static char CastUintToChar(this uint x) => (char)x;
+
+        /// <summary>
+        /// Tries to cast uint to decimal, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static decimal CastUintToDecimal(this uint x) => (decimal)x;
+
+        /// <summary>
+        /// Tries to cast uint to double, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static double CastUintToDouble(this uint x) => (double)x;
+
+        /// <summary>
+        /// Tries to cast uint to float, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static float CastUintToFloat(this uint x) => (float)x;
+
+        /// <summary>
+        /// Tries to cast uint to int, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static int CastUintToInt(this uint x) => (int)x;
+
+        /// <summary>
+        /// Tries to cast uint to long, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static long CastUintToLong(this uint x) => (long)x;
+
+        /// <summary>
+        /// Tries to cast uint to sbyte, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte CastUintToSbyte(this uint x) => (sbyte)x;
+
+        /// <summary>
+        /// Tries to cast uint to short, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static short CastUintToShort(this uint x) => (short)x;
+
+        /// <summary>
+        /// Tries to cast uint to ulong, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong CastUintToUlong(this uint x) => (ulong)x;
+
+        /// <summary>
+        /// Tries to cast uint to ushort, this can get ugly though
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static ushort CastUintToUshort(this uint x) => (ushort)x;
+
+        /// <summary>
+        /// Compare original and second number
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <returns>The highest of the two numbers</returns>
+        public static uint ChooseHighestValue(this uint first, uint second) => first > second ? first : second;
+
+        /// <summary>
+        /// Compare original and second number
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <returns>The lowest of the two numbers</returns>
+        public static uint ChooseLowestValue(this uint first, uint second) => first < second ? first : second;
+
+        /// <summary>
+        /// Divides byte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, byte y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides char from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, char y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides decimal from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, decimal y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides double from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, double y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides float from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, float y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides int from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, int y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides long from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, long y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides sbyte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, sbyte y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides short from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, short y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides uint from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, uint y) => x / y;
+
+        /// <summary>
+        /// Divides ulong from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, ulong y) => x / (uint)y;
+
+        /// <summary>
+        /// Divides ushort from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint DividedBy(this uint x, ushort y) => x / (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, byte y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, char y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than decimal
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, decimal y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, double y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than float
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, float y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than int
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, int y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than long
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, long y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, sbyte y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, short y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, uint y) => x > y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, ulong y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is greater than ushort
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool GreaterThan(this uint x, ushort y) => x > (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if byte is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, byte y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if char is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, char y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if decimal is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, decimal y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if double is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, double y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if float is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, float y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if int is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, int y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if long is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, long y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if sbyte is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, sbyte y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if short is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, short y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if uint is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, uint y) => x == y;
+
+        /// <summary>
+        /// Gets boolean True if ulong is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, ulong y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if ushort is equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsEqualTo(this uint x, ushort y) => x == (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if byte is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, byte y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if char is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, char y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if decimal is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, decimal y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if double is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, double y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if float is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, float y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if int is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, int y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if long is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, long y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if sbyte is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, sbyte y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if short is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, short y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if uint is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, uint y) => x != y;
+
+        /// <summary>
+        /// Gets boolean True if ulong is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, ulong y) => x != (uint)y;
+
+        /// <summary>
+        /// Gets boolean True if ushort is not equal to uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool IsNotEqualTo(this uint x, ushort y) => x != (uint)y;
+
+        /// <summary>
+        /// Checks if a number is prime
+        /// </summary>
+        /// <param name="number">The number</param>
+        /// <returns>True if the number is prime</returns>
+        public static bool IsPrime(this uint number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => (int)number % divisor != 0);
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, byte y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, char y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than decimal
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, decimal y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, double y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than float
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, float y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than int
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, int y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than long
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, long y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, sbyte y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, short y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, uint y) => x < y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, ulong y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets a boolean True if uint is less than ushort
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static bool LessThan(this uint x, ushort y) => x < (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of byte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, byte y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of char from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, char y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of decimal from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, decimal y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of double from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, double y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of float from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, float y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of int from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, int y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of long from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, long y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of sbyte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, sbyte y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of short from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, short y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of uint from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, uint y) => x % y;
+
+        /// <summary>
+        /// Gets the remainder of ulong from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, ulong y) => x % (uint)y;
+
+        /// <summary>
+        /// Gets the remainder of ushort from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Modulus(this uint x, ushort y) => x % (uint)y;
+
+        /// <summary>
+        /// Multiplies byte with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, byte y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies char with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, char y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies decimal with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, decimal y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies double with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, double y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies float with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, float y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies int with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, int y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies long with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, long y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies sbyte with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, sbyte y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies short with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, short y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies uint with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, uint y) => x * y;
+
+        /// <summary>
+        /// Multiplies ulong with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, ulong y) => x * (uint)y;
+
+        /// <summary>
+        /// Multiplies ushort with uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint MultipliedWith(this uint x, ushort y) => x * (uint)y;
+
+        /// <summary>
+        /// Gets the NOT of uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Not(this uint x) => (uint)~(int)x;
+
+        /// <summary>
+        /// Gets the OR of byte and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, byte y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of char and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, char y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of decimal and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, decimal y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of double and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, double y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of float and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, float y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of int and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, int y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of long and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, long y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of sbyte and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, sbyte y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of short and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, short y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of uint and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, uint y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of ulong and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, ulong y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the OR of ushort and uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Or(this uint x, ushort y) => (uint)((int)x | (int)y);
+
+        /// <summary>
+        /// Gets the percent of the value
+        /// </summary>
+        /// <param name="percent">The amount of percent</param>
+        /// <param name="value">The value</param>
+        /// <returns>The percent</returns>
+        public static uint PercentOf(this uint percent, uint value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
+
+        /// <summary>
+        /// Substracts byte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, byte y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts char from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, char y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts decimal from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, decimal y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts double from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, double y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts float from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, float y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts int from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, int y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts long from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, long y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts sbyte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, sbyte y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts short from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, short y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts uint from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, uint y) => x - y;
+
+        /// <summary>
+        /// Substracts ulong from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, ulong y) => x - (uint)y;
+
+        /// <summary>
+        /// Substracts ushort from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Substract(this uint x, ushort y) => x - (uint)y;
 
         /// <summary>
         /// Substracts the percent of the value
@@ -69,1070 +1328,129 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static decimal SubstractPercent(this decimal value, decimal percent) => (decimal)(value - value.PercentOf(percent));
+        public static uint SubstractPercent(this uint value, uint percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts byte from decimal
+        /// Swaps two variables
         /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, byte y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds byte to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, byte y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides byte from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, byte y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies byte with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, byte y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of byte from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, byte y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than byte
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, byte y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than byte
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, byte y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if byte is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, byte y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if byte is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, byte y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to byte, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static byte CastDecimalToByte(this decimal x) => (byte)x;
-
-        /// <summary>
-        /// Substracts char from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, char y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds char to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, char y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides char from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, char y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies char with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, char y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of char from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, char y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than char
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, char y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than char
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, char y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if char is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, char y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if char is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, char y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to char, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static char CastDecimalToChar(this decimal x) => (char)x;
-
-        /// <summary>
-        /// Substracts decimal from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, decimal y) => x - y;
-
-        /// <summary>
-        /// Adds decimal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, decimal y) => x + y;
-
-        /// <summary>
-        /// Divides decimal from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, decimal y) => x / y;
-
-        /// <summary>
-        /// Multiplies decimal with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, decimal y) => x * y;
-
-        /// <summary>
-        /// Gets the remainder of decimal from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, decimal y) => x % y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, decimal y) => x < y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, decimal y) => x > y;
-
-        /// <summary>
-        /// Gets boolean True if decimal is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, decimal y) => x == y;
-
-        /// <summary>
-        /// Gets boolean True if decimal is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, decimal y) => x != y;
-
-        /// <summary>
-        /// Substracts double from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, double y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds double to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, double y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides double from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, double y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies double with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, double y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of double from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, double y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than double
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, double y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than double
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, double y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if double is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, double y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if double is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, double y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to double, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static double CastDecimalToDouble(this decimal x) => (double)x;
-
-        /// <summary>
-        /// Substracts float from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, float y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds float to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, float y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides float from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, float y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies float with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, float y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of float from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, float y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than float
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, float y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than float
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, float y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if float is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, float y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if float is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, float y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to float, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static float CastDecimalToFloat(this decimal x) => (float)x;
-
-        /// <summary>
-        /// Substracts int from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, int y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds int to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, int y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides int from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, int y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies int with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, int y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of int from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, int y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than int
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, int y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than int
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, int y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if int is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, int y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if int is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, int y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to int, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static int CastDecimalToInt(this decimal x) => (int)x;
-
-        /// <summary>
-        /// Substracts long from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, long y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds long to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, long y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides long from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, long y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies long with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, long y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of long from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, long y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than long
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, long y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than long
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, long y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if long is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, long y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if long is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, long y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to long, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static long CastDecimalToLong(this decimal x) => (long)x;
-
-        /// <summary>
-        /// Substracts sbyte from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, sbyte y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds sbyte to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, sbyte y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides sbyte from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, sbyte y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies sbyte with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, sbyte y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of sbyte from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, sbyte y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than sbyte
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, sbyte y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than sbyte
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, sbyte y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean true if value is less than zero
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNegative(this decimal x) => x < 0;
-
-        /// <summary>
-        /// Gets boolean true if value is more than zero
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsPositive(this decimal x) => x >= 0;
-
-        /// <summary>
-        /// Gets boolean True if sbyte is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, sbyte y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if sbyte is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, sbyte y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to sbyte, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static sbyte CastDecimalToSbyte(this decimal x) => (sbyte)x;
-
-        /// <summary>
-        /// Substracts short from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, short y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds short to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, short y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides short from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, short y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies short with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, short y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of short from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, short y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than short
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, short y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than short
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, short y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if short is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, short y) => x == (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if short is not equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, short y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to short, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static short CastDecimalToShort(this decimal x) => (short)x;
-
-        /// <summary>
-        /// Substracts uint from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, uint y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds uint to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, uint y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides uint from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, uint y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies uint with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, uint y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of uint from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, uint y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than uint
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, uint y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than uint
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, uint y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if uint is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, uint y) => x == (decimal)y;
+        /// <param name="first">The main variable</param>
+        /// <param name="second">The variable to switch with</param>
+        /// <returns>
+        /// The value from the second variable and sets second variable to original value
+        /// </returns>
+        public static uint SwapWith(this uint first, ref uint second)
+        {
+            var tmp = second;
+            second = first;
+            return tmp;
+        }
 
         /// <summary>
-        /// Gets boolean True if uint is not equal to decimal
+        /// Gets XOR of byte of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, uint y) => x != (decimal)y;
+        public static uint Xor(this uint x, byte y) => x ^ (uint)y;
 
         /// <summary>
-        /// Tries to cast decimal to uint, this can get ugly though
+        /// Gets XOR of char of uint
         /// </summary>
         /// <param name="x">The original value</param>
-        /// <returns>The result of the operation</returns>
-        public static uint CastDecimalToUint(this decimal x) => (uint)x;
-
-        /// <summary>
-        /// Substracts ulong from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, ulong y) => x - (decimal)y;
-
-        /// <summary>
-        /// Adds ulong to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, ulong y) => x + (decimal)y;
-
-        /// <summary>
-        /// Divides ulong from decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, ulong y) => x / (decimal)y;
-
-        /// <summary>
-        /// Multiplies ulong with decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, ulong y) => x * (decimal)y;
-
-        /// <summary>
-        /// Gets the remainder of ulong from decimal
-        /// </summary>
         /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, ulong y) => x % (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is less than ulong
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, ulong y) => x < (decimal)y;
-
-        /// <summary>
-        /// Gets a boolean True if decimal is greater than ulong
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
-        /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, ulong y) => x > (decimal)y;
-
-        /// <summary>
-        /// Gets boolean True if ulong is equal to decimal
-        /// </summary>
-        /// <param name="x">The original value</param>
-        /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, ulong y) => x == (decimal)y;
+        public static uint Xor(this uint x, char y) => x ^ (uint)y;
 
         /// <summary>
-        /// Gets boolean True if ulong is not equal to decimal
+        /// Gets XOR of decimal of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, ulong y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to ulong, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong CastDecimalToUlong(this decimal x) => (ulong)x;
+        public static uint Xor(this uint x, decimal y) => x ^ (uint)y;
 
         /// <summary>
-        /// Substracts ushort from decimal
+        /// Gets XOR of double of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal Substract(this decimal x, ushort y) => x - (decimal)y;
+        public static uint Xor(this uint x, double y) => x ^ (uint)y;
 
         /// <summary>
-        /// Adds ushort to decimal
+        /// Gets XOR of float of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal Add(this decimal x, ushort y) => x + (decimal)y;
+        public static uint Xor(this uint x, float y) => x ^ (uint)y;
 
         /// <summary>
-        /// Divides ushort from decimal
+        /// Gets XOR of int of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal DividedBy(this decimal x, ushort y) => x / (decimal)y;
+        public static uint Xor(this uint x, int y) => x ^ (uint)y;
 
         /// <summary>
-        /// Multiplies ushort with decimal
+        /// Gets XOR of long of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal MultipliedWith(this decimal x, ushort y) => x * (decimal)y;
+        public static uint Xor(this uint x, long y) => x ^ (uint)y;
 
         /// <summary>
-        /// Gets the remainder of ushort from decimal
+        /// Gets XOR of sbyte of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static decimal Modulus(this decimal x, ushort y) => x % (decimal)y;
+        public static uint Xor(this uint x, sbyte y) => x ^ (uint)y;
 
         /// <summary>
-        /// Gets a boolean True if decimal is less than ushort
+        /// Gets XOR of short of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this decimal x, ushort y) => x < (decimal)y;
+        public static uint Xor(this uint x, short y) => x ^ (uint)y;
 
         /// <summary>
-        /// Gets a boolean True if decimal is greater than ushort
+        /// Gets XOR of uint of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this decimal x, ushort y) => x > (decimal)y;
+        public static uint Xor(this uint x, uint y) => x ^ y;
 
         /// <summary>
-        /// Gets boolean True if ushort is equal to decimal
+        /// Gets XOR of ulong of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this decimal x, ushort y) => x == (decimal)y;
+        public static uint Xor(this uint x, ulong y) => x ^ (uint)y;
 
         /// <summary>
-        /// Gets boolean True if ushort is not equal to decimal
+        /// Gets XOR of ushort of uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
-        /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this decimal x, ushort y) => x != (decimal)y;
-
-        /// <summary>
-        /// Tries to cast decimal to ushort, this can get ugly though
-        /// </summary>
-        /// <param name="x">The original value</param>
         /// <returns>The result of the operation</returns>
-        public static ushort CastDecimalToUshort(this decimal x) => (ushort)x;
-
+        public static uint Xor(this uint x, ushort y) => x ^ (uint)y;
     }
 }
