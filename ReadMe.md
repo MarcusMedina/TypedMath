@@ -29,8 +29,11 @@ using MarcusMedinaPro.TypedMath.UlongExtension; //Ulong
 using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 ```
 Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
-## Changes
 
+*This project is nothing magical, actually, most of the functions are oneliners. The idea is not to create complicated functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you :)*
+
+## Changes
+20190524 - Added Percent, Highest, Lowest, Swap
 
 ## Examples
 Here is the list of functions available for most of the types. In this example I'm using *double*
@@ -170,11 +173,32 @@ You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right
 ```
 
 Another nifty function is to be able to check if the current number is a prime number.
-
 ```C#
 var x = 5.IsPrime();
 ```
 
+## New features added
+You can get the percent, add and substract percent from a value.
+```C#
+var money = 1500;
+var x = 15.PercentOf(mmoney);
+
+money = money.AddPercent(20); // same as Money +=20.PercentOf(Money)
+money = money.SubstractPercent(20); // same as Money -=20.PercentOf(Money)
+
+```
+Choose highest or lowest number. It's a as simple as it sounds.
+```C#
+var x = ChooseHighestValue (value1, value2);
+var y = ChooseLowestValue (value1, value2);
+```
+
+Swap values if you'd ever need it.
+```C#
+var x = 10;
+var y = 20;
+var y = Swap(ref x);
+```
 
 ## Source code
 You can find the code at https://github.com/MarcusMedina/TypedMath
