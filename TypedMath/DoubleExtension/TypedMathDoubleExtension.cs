@@ -213,66 +213,77 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <summary>
         /// Tries to cast double to byte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static byte CastDoubleToByte(this double x) => (byte)x;
 
         /// <summary>
         /// Tries to cast double to char, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static char CastDoubleToChar(this double x) => (char)x;
 
         /// <summary>
         /// Tries to cast double to decimal, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static decimal CastDoubleToDecimal(this double x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast double to float, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static float CastDoubleToFloat(this double x) => (float)x;
 
         /// <summary>
         /// Tries to cast double to int, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static int CastDoubleToInt(this double x) => (int)x;
 
         /// <summary>
         /// Tries to cast double to long, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static long CastDoubleToLong(this double x) => (long)x;
 
         /// <summary>
         /// Tries to cast double to sbyte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static sbyte CastDoubleToSbyte(this double x) => (sbyte)x;
 
         /// <summary>
         /// Tries to cast double to short, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static short CastDoubleToShort(this double x) => (short)x;
 
         /// <summary>
         /// Tries to cast double to uint, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static uint CastDoubleToUint(this double x) => (uint)x;
 
         /// <summary>
         /// Tries to cast double to ulong, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static ulong CastDoubleToUlong(this double x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast double to ushort, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static ushort CastDoubleToUshort(this double x) => (ushort)x;
 
@@ -583,6 +594,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <summary>
         /// Gets boolean true if value is less than zero
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsNegative(this double x) => x < 0;
 
@@ -685,6 +697,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <summary>
         /// Gets boolean true if value is more than zero
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsPositive(this double x) => x >= 0;
 
@@ -693,10 +706,6 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// </summary>
         /// <param name="number">The number</param>
         /// <returns>True if the number is prime</returns>
-        /// <credits>
-        /// Code borrowed from http://www.codinghelmet.com/articles/linq-all-primes/ to get primes
-        /// with Linq
-        /// </credits>
         public static bool IsPrime(this double number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
 
         /// <summary>
@@ -990,6 +999,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <summary>
         /// Gets the NOT of double
         /// </summary>
+        /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
         public static double Not(this double x) => ~(int)x;
 
@@ -1286,9 +1296,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>
-        /// The value from the second variable and sets second variable to original value
-        /// </returns>
+        /// <returns>The <see cref="double"/></returns>
         public static double SwapWith(this double first, ref double second)
         {
             var tmp = second;

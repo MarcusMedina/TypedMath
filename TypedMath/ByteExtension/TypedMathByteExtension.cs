@@ -309,66 +309,77 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <summary>
         /// Tries to cast byte to char, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static char CastByteToChar(this byte x) => (char)x;
 
         /// <summary>
         /// Tries to cast byte to decimal, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static decimal CastByteToDecimal(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to double, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static double CastByteToDouble(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to float, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static float CastByteToFloat(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to int, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static int CastByteToInt(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to long, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static long CastByteToLong(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to sbyte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static sbyte CastByteToSbyte(this byte x) => (sbyte)x;
 
         /// <summary>
         /// Tries to cast byte to short, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static short CastByteToShort(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to uint, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static uint CastByteToUint(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to ulong, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static ulong CastByteToUlong(this byte x) => x;
 
         /// <summary>
         /// Tries to cast byte to ushort, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static ushort CastByteToUshort(this byte x) => x;
 
@@ -681,10 +692,6 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// </summary>
         /// <param name="number">The number</param>
         /// <returns>True if the number is prime</returns>
-        /// <credits>
-        /// Code borrowed from http://www.codinghelmet.com/articles/linq-all-primes/ to get primes
-        /// with Linq
-        /// </credits>
         public static bool IsPrime(this byte number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
 
         /// <summary>
@@ -882,6 +889,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <summary>
         /// Gets the NOT of byte
         /// </summary>
+        /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
         public static byte Not(this byte x) => (byte)~(int)x;
 
@@ -1466,9 +1474,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>
-        /// The value from the second variable and sets second variable to original value
-        /// </returns>
+        /// <returns>The <see cref="byte"/></returns>
         public static byte SwapWith(this byte first, ref byte second)
         {
             var tmp = second;

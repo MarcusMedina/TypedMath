@@ -210,66 +210,77 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <summary>
         /// Tries to cast decimal to byte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static byte CastDecimalToByte(this decimal x) => (byte)x;
 
         /// <summary>
         /// Tries to cast decimal to char, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static char CastDecimalToChar(this decimal x) => (char)x;
 
         /// <summary>
         /// Tries to cast decimal to double, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static double CastDecimalToDouble(this decimal x) => (double)x;
 
         /// <summary>
         /// Tries to cast decimal to float, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static float CastDecimalToFloat(this decimal x) => (float)x;
 
         /// <summary>
         /// Tries to cast decimal to int, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static int CastDecimalToInt(this decimal x) => (int)x;
 
         /// <summary>
         /// Tries to cast decimal to long, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static long CastDecimalToLong(this decimal x) => (long)x;
 
         /// <summary>
         /// Tries to cast decimal to sbyte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static sbyte CastDecimalToSbyte(this decimal x) => (sbyte)x;
 
         /// <summary>
         /// Tries to cast decimal to short, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static short CastDecimalToShort(this decimal x) => (short)x;
 
         /// <summary>
         /// Tries to cast decimal to uint, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static uint CastDecimalToUint(this decimal x) => (uint)x;
 
         /// <summary>
         /// Tries to cast decimal to ulong, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static ulong CastDecimalToUlong(this decimal x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast decimal to ushort, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static ushort CastDecimalToUshort(this decimal x) => (ushort)x;
 
@@ -580,6 +591,7 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <summary>
         /// Gets boolean true if value is less than zero
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsNegative(this decimal x) => x < 0;
 
@@ -682,6 +694,7 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <summary>
         /// Gets boolean true if value is more than zero
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsPositive(this decimal x) => x >= 0;
 
@@ -976,6 +989,7 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// <summary>
         /// Gets the NOT of decimal
         /// </summary>
+        /// <param name="x">The x <see cref="decimal"/></param>
         /// <returns>The result of the operation</returns>
         public static decimal Not(this decimal x) => ~(int)x;
 
@@ -1272,9 +1286,7 @@ namespace MarcusMedinaPro.TypedMath.DecimalExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>
-        /// The value from the second variable and sets second variable to original value
-        /// </returns>
+        /// <returns>The <see cref="decimal"/></returns>
         public static decimal SwapWith(this decimal first, ref decimal second)
         {
             var tmp = second;

@@ -309,66 +309,77 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// <summary>
         /// Tries to cast int to byte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static byte CastIntToByte(this int x) => (byte)x;
 
         /// <summary>
         /// Tries to cast int to char, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static char CastIntToChar(this int x) => (char)x;
 
         /// <summary>
         /// Tries to cast int to decimal, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static decimal CastIntToDecimal(this int x) => x;
 
         /// <summary>
         /// Tries to cast int to double, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static double CastIntToDouble(this int x) => x;
 
         /// <summary>
         /// Tries to cast int to float, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static float CastIntToFloat(this int x) => x;
 
         /// <summary>
         /// Tries to cast int to long, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static long CastIntToLong(this int x) => x;
 
         /// <summary>
         /// Tries to cast int to sbyte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static sbyte CastIntToSbyte(this int x) => (sbyte)x;
 
         /// <summary>
         /// Tries to cast int to short, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static short CastIntToShort(this int x) => (short)x;
 
         /// <summary>
         /// Tries to cast int to uint, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static uint CastIntToUint(this int x) => (uint)x;
 
         /// <summary>
         /// Tries to cast int to ulong, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static ulong CastIntToUlong(this int x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast int to ushort, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static ushort CastIntToUshort(this int x) => (ushort)x;
 
@@ -679,6 +690,7 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// <summary>
         /// Gets boolean true if value is less than zero
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsNegative(this int x) => x < 0;
 
@@ -781,6 +793,7 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// <summary>
         /// Gets boolean true if value is more than zero
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsPositive(this int x) => x >= 0;
 
@@ -789,10 +802,6 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// </summary>
         /// <param name="number">The number</param>
         /// <returns>True if the number is prime</returns>
-        /// <credits>
-        /// Code borrowed from http://www.codinghelmet.com/articles/linq-all-primes/ to get primes
-        /// with Linq
-        /// </credits>
         public static bool IsPrime(this int number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
 
         /// <summary>
@@ -1086,6 +1095,7 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// <summary>
         /// Gets the NOT of int
         /// </summary>
+        /// <param name="x">The x <see cref="int"/></param>
         /// <returns>The result of the operation</returns>
         public static int Not(this int x) => ~x;
 
@@ -1670,9 +1680,7 @@ namespace MarcusMedinaPro.TypedMath.IntExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>
-        /// The value from the second variable and sets second variable to original value
-        /// </returns>
+        /// <returns>The <see cref="int"/></returns>
         public static int SwapWith(this int first, ref int second)
         {
             var tmp = second;

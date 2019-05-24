@@ -213,66 +213,77 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// <summary>
         /// Tries to cast float to byte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static byte CastFloatToByte(this float x) => (byte)x;
 
         /// <summary>
         /// Tries to cast float to char, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static char CastFloatToChar(this float x) => (char)x;
 
         /// <summary>
         /// Tries to cast float to decimal, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static decimal CastFloatToDecimal(this float x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast float to double, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static double CastFloatToDouble(this float x) => x;
 
         /// <summary>
         /// Tries to cast float to int, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static int CastFloatToInt(this float x) => (int)x;
 
         /// <summary>
         /// Tries to cast float to long, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static long CastFloatToLong(this float x) => (long)x;
 
         /// <summary>
         /// Tries to cast float to sbyte, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static sbyte CastFloatToSbyte(this float x) => (sbyte)x;
 
         /// <summary>
         /// Tries to cast float to short, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static short CastFloatToShort(this float x) => (short)x;
 
         /// <summary>
         /// Tries to cast float to uint, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static uint CastFloatToUint(this float x) => (uint)x;
 
         /// <summary>
         /// Tries to cast float to ulong, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static ulong CastFloatToUlong(this float x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast float to ushort, this can get ugly though
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static ushort CastFloatToUshort(this float x) => (ushort)x;
 
@@ -583,6 +594,7 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// <summary>
         /// Gets boolean true if value is less than zero
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsNegative(this float x) => x < 0;
 
@@ -685,6 +697,7 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// <summary>
         /// Gets boolean true if value is more than zero
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static bool IsPositive(this float x) => x >= 0;
 
@@ -693,10 +706,6 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// </summary>
         /// <param name="number">The number</param>
         /// <returns>True if the number is prime</returns>
-        /// <credits>
-        /// Code borrowed from http://www.codinghelmet.com/articles/linq-all-primes/ to get primes
-        /// with Linq
-        /// </credits>
         public static bool IsPrime(this float number) => Enumerable.Range(2, (int)Math.Sqrt(number) - 1).All(divisor => number % divisor != 0);
 
         /// <summary>
@@ -990,6 +999,7 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// <summary>
         /// Gets the NOT of float
         /// </summary>
+        /// <param name="x">The x <see cref="float"/></param>
         /// <returns>The result of the operation</returns>
         public static float Not(this float x) => ~(int)x;
 
@@ -1286,9 +1296,7 @@ namespace MarcusMedinaPro.TypedMath.FloatExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>
-        /// The value from the second variable and sets second variable to original value
-        /// </returns>
+        /// <returns>The <see cref="float"/></returns>
         public static float SwapWith(this float first, ref float second)
         {
             var tmp = second;
