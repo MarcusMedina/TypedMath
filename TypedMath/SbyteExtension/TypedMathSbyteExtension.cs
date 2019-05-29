@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, byte y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, byte y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds char to sbyte
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, char y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, char y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds decimal to sbyte
@@ -40,7 +40,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, decimal y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, decimal y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds double to sbyte
@@ -48,7 +48,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, double y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, double y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds float to sbyte
@@ -56,7 +56,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, float y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, float y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds int to sbyte
@@ -64,7 +64,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, int y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, int y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds long to sbyte
@@ -72,7 +72,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, long y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, long y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds sbyte to sbyte
@@ -80,7 +80,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, sbyte y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, sbyte y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds short to sbyte
@@ -88,7 +88,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, short y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, short y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds uint to sbyte
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, uint y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, uint y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds ulong to sbyte
@@ -104,7 +104,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, ulong y) => (sbyte)(x + (int)y);
+        public static sbyte Add(this sbyte x, ulong y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds ushort to sbyte
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Add(this sbyte x, ushort y) => (sbyte)(x + y);
+        public static sbyte Add(this sbyte x, ushort y) => (sbyte)((int)x + (int)y);
 
         /// <summary>
         /// Adds the percent of the value
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, byte y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, byte y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of char and sbyte
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, char y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, char y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of decimal and sbyte
@@ -232,7 +232,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, decimal y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, decimal y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of double and sbyte
@@ -240,7 +240,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, double y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, double y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of float and sbyte
@@ -248,7 +248,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, float y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, float y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of int and sbyte
@@ -256,7 +256,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, int y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, int y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of long and sbyte
@@ -264,7 +264,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, long y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, long y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of sbyte and sbyte
@@ -272,7 +272,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, sbyte y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, sbyte y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of short and sbyte
@@ -280,7 +280,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, short y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, short y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of uint and sbyte
@@ -288,7 +288,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, uint y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, uint y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ulong and sbyte
@@ -296,7 +296,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, ulong y) => (sbyte)(x & (int)y);
+        public static sbyte And(this sbyte x, ulong y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ushort and sbyte
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte And(this sbyte x, ushort y) => (sbyte)(x & y);
+        public static sbyte And(this sbyte x, ushort y) => (sbyte)((int)x & (int)y);
 
         /// <summary>
         /// Tries to cast sbyte to byte, this can get ugly though
@@ -325,42 +325,42 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastSbyteToDecimal(this sbyte x) => x;
+        public static decimal CastSbyteToDecimal(this sbyte x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast sbyte to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastSbyteToDouble(this sbyte x) => x;
+        public static double CastSbyteToDouble(this sbyte x) => (double)x;
 
         /// <summary>
         /// Tries to cast sbyte to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastSbyteToFloat(this sbyte x) => x;
+        public static float CastSbyteToFloat(this sbyte x) => (float)x;
 
         /// <summary>
         /// Tries to cast sbyte to int, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static int CastSbyteToInt(this sbyte x) => x;
+        public static int CastSbyteToInt(this sbyte x) => (int)x;
 
         /// <summary>
         /// Tries to cast sbyte to long, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static long CastSbyteToLong(this sbyte x) => x;
+        public static long CastSbyteToLong(this sbyte x) => (long)x;
 
         /// <summary>
         /// Tries to cast sbyte to short, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="sbyte"/></param>
         /// <returns>The result of the operation</returns>
-        public static short CastSbyteToShort(this sbyte x) => x;
+        public static short CastSbyteToShort(this sbyte x) => (short)x;
 
         /// <summary>
         /// Tries to cast sbyte to uint, this can get ugly though
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static sbyte ChooseHighestValue(this sbyte first, sbyte second) => first > second ? first : second;
+        public static sbyte ChooseIfHigher(this sbyte first, sbyte second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static sbyte ChooseLowestValue(this sbyte first, sbyte second) => first < second ? first : second;
+        public static sbyte ChooseIfLower(this sbyte first, sbyte second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from sbyte
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, byte y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, byte y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides char from sbyte
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, char y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, char y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides decimal from sbyte
@@ -421,7 +421,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, decimal y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, decimal y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides double from sbyte
@@ -429,7 +429,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, double y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, double y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides float from sbyte
@@ -437,7 +437,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, float y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, float y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides int from sbyte
@@ -445,7 +445,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, int y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, int y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides long from sbyte
@@ -453,7 +453,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, long y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, long y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides sbyte from sbyte
@@ -461,7 +461,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, sbyte y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, sbyte y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides short from sbyte
@@ -469,7 +469,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, short y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, short y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides uint from sbyte
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, uint y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, uint y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides ulong from sbyte
@@ -485,7 +485,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, ulong y) => (sbyte)(x / (int)y);
+        public static sbyte DividedBy(this sbyte x, ulong y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Divides ushort from sbyte
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte DividedBy(this sbyte x, ushort y) => (sbyte)(x / y);
+        public static sbyte DividedBy(this sbyte x, ushort y) => (sbyte)((int)x / (int)y);
 
         /// <summary>
         /// Gets a boolean True if sbyte is greater than byte
@@ -906,7 +906,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, byte y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, byte y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of char from sbyte
@@ -914,7 +914,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, char y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, char y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of decimal from sbyte
@@ -922,7 +922,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, decimal y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, decimal y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of double from sbyte
@@ -930,7 +930,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, double y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, double y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of float from sbyte
@@ -938,7 +938,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, float y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, float y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of int from sbyte
@@ -946,7 +946,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, int y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, int y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of long from sbyte
@@ -954,7 +954,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, long y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, long y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of sbyte from sbyte
@@ -962,7 +962,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, sbyte y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, sbyte y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of short from sbyte
@@ -970,7 +970,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, short y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, short y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of uint from sbyte
@@ -978,7 +978,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, uint y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, uint y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ulong from sbyte
@@ -986,7 +986,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, ulong y) => (sbyte)(x % (int)y);
+        public static sbyte Modulus(this sbyte x, ulong y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ushort from sbyte
@@ -994,7 +994,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Modulus(this sbyte x, ushort y) => (sbyte)(x % y);
+        public static sbyte Modulus(this sbyte x, ushort y) => (sbyte)((int)x % (int)y);
 
         /// <summary>
         /// Multiplies byte with sbyte
@@ -1002,7 +1002,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, byte y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, byte y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies char with sbyte
@@ -1010,7 +1010,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, char y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, char y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies decimal with sbyte
@@ -1018,7 +1018,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, decimal y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, decimal y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies double with sbyte
@@ -1026,7 +1026,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, double y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, double y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies float with sbyte
@@ -1034,7 +1034,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, float y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, float y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies int with sbyte
@@ -1042,7 +1042,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, int y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, int y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies long with sbyte
@@ -1050,7 +1050,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, long y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, long y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies sbyte with sbyte
@@ -1058,7 +1058,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, sbyte y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, sbyte y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies short with sbyte
@@ -1066,7 +1066,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, short y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, short y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies uint with sbyte
@@ -1074,7 +1074,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, uint y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, uint y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ulong with sbyte
@@ -1082,7 +1082,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, ulong y) => (sbyte)(x * (int)y);
+        public static sbyte MultipliedWith(this sbyte x, ulong y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ushort with sbyte
@@ -1090,7 +1090,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte MultipliedWith(this sbyte x, ushort y) => (sbyte)(x * y);
+        public static sbyte MultipliedWith(this sbyte x, ushort y) => (sbyte)((int)x * (int)y);
 
         /// <summary>
         /// Gets the NOT of sbyte
@@ -1105,7 +1105,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, byte y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, byte y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and sbyte
@@ -1113,7 +1113,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, char y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, char y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and sbyte
@@ -1121,7 +1121,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, decimal y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, decimal y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of double and sbyte
@@ -1129,7 +1129,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, double y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, double y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of float and sbyte
@@ -1137,7 +1137,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, float y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, float y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of int and sbyte
@@ -1145,7 +1145,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, int y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, int y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and sbyte
@@ -1153,7 +1153,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, long y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, long y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of sbyte and sbyte
@@ -1161,7 +1161,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, sbyte y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, sbyte y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and sbyte
@@ -1169,7 +1169,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, short y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, short y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and sbyte
@@ -1177,7 +1177,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, uint y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, uint y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ulong and sbyte
@@ -1185,7 +1185,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, ulong y) => (sbyte)(x | (int)y);
+        public static sbyte Or(this sbyte x, ulong y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ushort and sbyte
@@ -1193,7 +1193,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Or(this sbyte x, ushort y) => (sbyte)(x | y);
+        public static sbyte Or(this sbyte x, ushort y) => (sbyte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -1201,7 +1201,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, byte value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, byte value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1209,7 +1209,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, char value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, char value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1217,7 +1217,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, decimal value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, decimal value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1225,7 +1225,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, double value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, double value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1233,7 +1233,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, float value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, float value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1241,7 +1241,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, int value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, int value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1249,7 +1249,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, long value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, long value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1257,7 +1257,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, sbyte value) => (sbyte)(percent / 100 * value);
+        public static sbyte PercentOf(this sbyte percent, sbyte value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1265,7 +1265,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, short value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, short value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1273,7 +1273,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, uint value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, uint value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1281,7 +1281,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, ulong value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, ulong value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1289,7 +1289,33 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static sbyte PercentOf(this sbyte percent, ushort value) => (sbyte)(percent / 100 * ((sbyte)value));
+        public static sbyte PercentOf(this sbyte percent, ushort value) => (sbyte)(((sbyte)percent) / ((sbyte)100) * ((sbyte)value));
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref sbyte SetHighestValueOf(this ref sbyte first, sbyte second, sbyte third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="sbyte"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref sbyte SetLowestValueOf(this ref sbyte first, sbyte second, sbyte third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
 
         /// <summary>
         /// Gets shift left of byte from sbyte
@@ -1297,7 +1323,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, byte y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, byte y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of char from sbyte
@@ -1305,7 +1331,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, char y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, char y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of decimal from sbyte
@@ -1313,7 +1339,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, decimal y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, decimal y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of double from sbyte
@@ -1321,7 +1347,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, double y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, double y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of float from sbyte
@@ -1329,7 +1355,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, float y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, float y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of int from sbyte
@@ -1337,7 +1363,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, int y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, int y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of long from sbyte
@@ -1345,7 +1371,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, long y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, long y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of sbyte from sbyte
@@ -1353,7 +1379,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, sbyte y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, sbyte y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of short from sbyte
@@ -1361,7 +1387,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, short y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, short y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of uint from sbyte
@@ -1369,7 +1395,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, uint y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, uint y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ulong from sbyte
@@ -1377,7 +1403,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, ulong y) => (sbyte)(x << (int)y);
+        public static sbyte ShiftLeft(this sbyte x, ulong y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ushort from sbyte
@@ -1385,7 +1411,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftLeft(this sbyte x, ushort y) => (sbyte)(x << y);
+        public static sbyte ShiftLeft(this sbyte x, ushort y) => (sbyte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift right of byte from sbyte
@@ -1393,7 +1419,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, byte y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, byte y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of char from sbyte
@@ -1401,7 +1427,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, char y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, char y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of decimal from sbyte
@@ -1409,7 +1435,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, decimal y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, decimal y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of double from sbyte
@@ -1417,7 +1443,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, double y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, double y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of float from sbyte
@@ -1425,7 +1451,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, float y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, float y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of int from sbyte
@@ -1433,7 +1459,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, int y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, int y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of long from sbyte
@@ -1441,7 +1467,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, long y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, long y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of sbyte from sbyte
@@ -1449,7 +1475,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, sbyte y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, sbyte y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of short from sbyte
@@ -1457,7 +1483,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, short y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, short y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of uint from sbyte
@@ -1465,7 +1491,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, uint y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, uint y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ulong from sbyte
@@ -1473,7 +1499,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, ulong y) => (sbyte)(x >> (int)y);
+        public static sbyte ShiftRight(this sbyte x, ulong y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ushort from sbyte
@@ -1481,199 +1507,415 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte ShiftRight(this sbyte x, ushort y) => (sbyte)(x >> y);
+        public static sbyte ShiftRight(this sbyte x, ushort y) => (sbyte)((int)x >> (int)y);
 
         /// <summary>
-        /// Substracts byte from sbyte
+        /// Subtracts byte from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, byte y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,byte) instead.", false)]
+        public static sbyte Substract(this sbyte x, byte y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts char from sbyte
+        /// Subtracts char from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, char y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,char) instead.", false)]
+        public static sbyte Substract(this sbyte x, char y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts decimal from sbyte
+        /// Subtracts decimal from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, decimal y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,decimal) instead.", false)]
+        public static sbyte Substract(this sbyte x, decimal y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts double from sbyte
+        /// Subtracts double from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, double y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,double) instead.", false)]
+        public static sbyte Substract(this sbyte x, double y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts float from sbyte
+        /// Subtracts float from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, float y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,float) instead.", false)]
+        public static sbyte Substract(this sbyte x, float y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts int from sbyte
+        /// Subtracts int from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, int y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,int) instead.", false)]
+        public static sbyte Substract(this sbyte x, int y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts long from sbyte
+        /// Subtracts long from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, long y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,long) instead.", false)]
+        public static sbyte Substract(this sbyte x, long y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts sbyte from sbyte
+        /// Subtracts sbyte from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, sbyte y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,sbyte) instead.", false)]
+        public static sbyte Substract(this sbyte x, sbyte y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts short from sbyte
+        /// Subtracts short from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, short y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,short) instead.", false)]
+        public static sbyte Substract(this sbyte x, short y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts uint from sbyte
+        /// Subtracts uint from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, uint y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,uint) instead.", false)]
+        public static sbyte Substract(this sbyte x, uint y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ulong from sbyte
+        /// Subtracts ulong from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, ulong y) => (sbyte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,ulong) instead.", false)]
+        public static sbyte Substract(this sbyte x, ulong y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ushort from sbyte
+        /// Subtracts ushort from sbyte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Substract(this sbyte x, ushort y) => (sbyte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(sbyte,ushort) instead.", false)]
+        public static sbyte Substract(this sbyte x, ushort y) => (sbyte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, byte percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, char percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, decimal percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, double percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, float percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, int percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, long percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, sbyte percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, short percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, uint percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, ulong percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
         public static sbyte SubstractPercent(this sbyte value, ushort percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, byte y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts char from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, char y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts decimal from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, decimal y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts double from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, double y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts float from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, float y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts int from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, int y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts long from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, long y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts sbyte from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, sbyte y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts short from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, short y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts uint from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, uint y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ulong from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, ulong y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ushort from sbyte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static sbyte Subtract(this sbyte x, ushort y) => (sbyte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, byte percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, char percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, decimal percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, double percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, float percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, int percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, long percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, sbyte percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, short percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, uint percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, ulong percent) => (sbyte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static sbyte SubtractPercent(this sbyte value, ushort percent) => (sbyte)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
@@ -1683,11 +1925,12 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <returns>
         /// The value from the second variable and sets second variable to original value
         /// </returns>
-        public static sbyte SwapWith(this sbyte first, ref sbyte second)
+        public static ref sbyte SwapWith(this ref sbyte first, ref sbyte second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1696,7 +1939,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, byte y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, byte y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of char of sbyte
@@ -1704,7 +1947,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, char y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, char y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of decimal of sbyte
@@ -1712,7 +1955,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, decimal y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, decimal y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of double of sbyte
@@ -1720,7 +1963,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, double y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, double y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of float of sbyte
@@ -1728,7 +1971,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, float y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, float y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of int of sbyte
@@ -1736,7 +1979,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, int y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, int y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of long of sbyte
@@ -1744,7 +1987,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, long y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, long y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of sbyte of sbyte
@@ -1752,7 +1995,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, sbyte y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, sbyte y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of short of sbyte
@@ -1760,7 +2003,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, short y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, short y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of uint of sbyte
@@ -1768,7 +2011,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, uint y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, uint y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ulong of sbyte
@@ -1776,7 +2019,7 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, ulong y) => (sbyte)(x ^ (int)y);
+        public static sbyte Xor(this sbyte x, ulong y) => (sbyte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ushort of sbyte
@@ -1784,6 +2027,6 @@ namespace MarcusMedinaPro.TypedMath.SbyteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static sbyte Xor(this sbyte x, ushort y) => (sbyte)(x ^ y);
+        public static sbyte Xor(this sbyte x, ushort y) => (sbyte)((int)x ^ (int)y);
     }
 }

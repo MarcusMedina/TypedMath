@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Add(this ulong x, byte y) => x + y;
+        public static ulong Add(this ulong x, byte y) => x + (ulong)y;
 
         /// <summary>
         /// Adds char to ulong
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Add(this ulong x, char y) => x + y;
+        public static ulong Add(this ulong x, char y) => x + (ulong)y;
 
         /// <summary>
         /// Adds decimal to ulong
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Add(this ulong x, uint y) => x + y;
+        public static ulong Add(this ulong x, uint y) => x + (ulong)y;
 
         /// <summary>
         /// Adds ulong to ulong
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Add(this ulong x, ushort y) => x + y;
+        public static ulong Add(this ulong x, ushort y) => x + (ulong)y;
 
         /// <summary>
         /// Adds the percent of the value
@@ -120,7 +120,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, byte percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, byte percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -128,7 +128,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, char percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, char percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -136,7 +136,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, decimal percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, decimal percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -144,7 +144,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, double percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, double percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -152,7 +152,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, float percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, float percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -160,7 +160,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, int percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, int percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -168,7 +168,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, long percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, long percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -176,7 +176,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, sbyte percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, sbyte percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -184,7 +184,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, short percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, short percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -192,7 +192,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, uint percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, uint percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -200,7 +200,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, ulong percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, ulong percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -208,7 +208,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong AddPercent(this ulong value, ushort percent) => value + value.PercentOf(percent);
+        public static ulong AddPercent(this ulong value, ushort percent) => (ulong)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Gets the AND of byte and ulong
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong And(this ulong x, byte y) => x & y;
+        public static ulong And(this ulong x, byte y) => x & (ulong)y;
 
         /// <summary>
         /// Gets the AND of char and ulong
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong And(this ulong x, char y) => x & y;
+        public static ulong And(this ulong x, char y) => x & (ulong)y;
 
         /// <summary>
         /// Gets the AND of decimal and ulong
@@ -288,7 +288,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong And(this ulong x, uint y) => x & y;
+        public static ulong And(this ulong x, uint y) => x & (ulong)y;
 
         /// <summary>
         /// Gets the AND of ulong and ulong
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong And(this ulong x, ushort y) => x & y;
+        public static ulong And(this ulong x, ushort y) => x & (ulong)y;
 
         /// <summary>
         /// Tries to cast ulong to byte, this can get ugly though
@@ -325,21 +325,21 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// </summary>
         /// <param name="x">The x <see cref="ulong"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastUlongToDecimal(this ulong x) => x;
+        public static decimal CastUlongToDecimal(this ulong x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast ulong to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="ulong"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastUlongToDouble(this ulong x) => x;
+        public static double CastUlongToDouble(this ulong x) => (double)x;
 
         /// <summary>
         /// Tries to cast ulong to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="ulong"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastUlongToFloat(this ulong x) => x;
+        public static float CastUlongToFloat(this ulong x) => (float)x;
 
         /// <summary>
         /// Tries to cast ulong to int, this can get ugly though
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static ulong ChooseHighestValue(this ulong first, ulong second) => first > second ? first : second;
+        public static ulong ChooseIfHigher(this ulong first, ulong second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static ulong ChooseLowestValue(this ulong first, ulong second) => first < second ? first : second;
+        public static ulong ChooseIfLower(this ulong first, ulong second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from ulong
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong DividedBy(this ulong x, byte y) => x / y;
+        public static ulong DividedBy(this ulong x, byte y) => x / (ulong)y;
 
         /// <summary>
         /// Divides char from ulong
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong DividedBy(this ulong x, char y) => x / y;
+        public static ulong DividedBy(this ulong x, char y) => x / (ulong)y;
 
         /// <summary>
         /// Divides decimal from ulong
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong DividedBy(this ulong x, uint y) => x / y;
+        public static ulong DividedBy(this ulong x, uint y) => x / (ulong)y;
 
         /// <summary>
         /// Divides ulong from ulong
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong DividedBy(this ulong x, ushort y) => x / y;
+        public static ulong DividedBy(this ulong x, ushort y) => x / (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is greater than byte
@@ -501,7 +501,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this ulong x, byte y) => x > y;
+        public static bool GreaterThan(this ulong x, byte y) => x > (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is greater than char
@@ -509,7 +509,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this ulong x, char y) => x > y;
+        public static bool GreaterThan(this ulong x, char y) => x > (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is greater than decimal
@@ -573,7 +573,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this ulong x, uint y) => x > y;
+        public static bool GreaterThan(this ulong x, uint y) => x > (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is greater than ulong
@@ -589,7 +589,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this ulong x, ushort y) => x > y;
+        public static bool GreaterThan(this ulong x, ushort y) => x > (ulong)y;
 
         /// <summary>
         /// Gets boolean True if byte is equal to ulong
@@ -597,7 +597,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this ulong x, byte y) => x == y;
+        public static bool IsEqualTo(this ulong x, byte y) => x == (ulong)y;
 
         /// <summary>
         /// Gets boolean True if char is equal to ulong
@@ -605,7 +605,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this ulong x, char y) => x == y;
+        public static bool IsEqualTo(this ulong x, char y) => x == (ulong)y;
 
         /// <summary>
         /// Gets boolean True if decimal is equal to ulong
@@ -669,7 +669,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this ulong x, uint y) => x == y;
+        public static bool IsEqualTo(this ulong x, uint y) => x == (ulong)y;
 
         /// <summary>
         /// Gets boolean True if ulong is equal to ulong
@@ -685,7 +685,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this ulong x, ushort y) => x == y;
+        public static bool IsEqualTo(this ulong x, ushort y) => x == (ulong)y;
 
         /// <summary>
         /// Gets boolean True if byte is not equal to ulong
@@ -693,7 +693,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this ulong x, byte y) => x != y;
+        public static bool IsNotEqualTo(this ulong x, byte y) => x != (ulong)y;
 
         /// <summary>
         /// Gets boolean True if char is not equal to ulong
@@ -701,7 +701,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this ulong x, char y) => x != y;
+        public static bool IsNotEqualTo(this ulong x, char y) => x != (ulong)y;
 
         /// <summary>
         /// Gets boolean True if decimal is not equal to ulong
@@ -765,7 +765,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this ulong x, uint y) => x != y;
+        public static bool IsNotEqualTo(this ulong x, uint y) => x != (ulong)y;
 
         /// <summary>
         /// Gets boolean True if ulong is not equal to ulong
@@ -781,7 +781,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this ulong x, ushort y) => x != y;
+        public static bool IsNotEqualTo(this ulong x, ushort y) => x != (ulong)y;
 
         /// <summary>
         /// Checks if a number is prime
@@ -796,7 +796,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this ulong x, byte y) => x < y;
+        public static bool LessThan(this ulong x, byte y) => x < (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is less than char
@@ -804,7 +804,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this ulong x, char y) => x < y;
+        public static bool LessThan(this ulong x, char y) => x < (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is less than decimal
@@ -868,7 +868,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this ulong x, uint y) => x < y;
+        public static bool LessThan(this ulong x, uint y) => x < (ulong)y;
 
         /// <summary>
         /// Gets a boolean True if ulong is less than ulong
@@ -884,7 +884,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this ulong x, ushort y) => x < y;
+        public static bool LessThan(this ulong x, ushort y) => x < (ulong)y;
 
         /// <summary>
         /// Gets the remainder of byte from ulong
@@ -892,7 +892,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Modulus(this ulong x, byte y) => x % y;
+        public static ulong Modulus(this ulong x, byte y) => x % (ulong)y;
 
         /// <summary>
         /// Gets the remainder of char from ulong
@@ -900,7 +900,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Modulus(this ulong x, char y) => x % y;
+        public static ulong Modulus(this ulong x, char y) => x % (ulong)y;
 
         /// <summary>
         /// Gets the remainder of decimal from ulong
@@ -964,7 +964,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Modulus(this ulong x, uint y) => x % y;
+        public static ulong Modulus(this ulong x, uint y) => x % (ulong)y;
 
         /// <summary>
         /// Gets the remainder of ulong from ulong
@@ -980,7 +980,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Modulus(this ulong x, ushort y) => x % y;
+        public static ulong Modulus(this ulong x, ushort y) => x % (ulong)y;
 
         /// <summary>
         /// Multiplies byte with ulong
@@ -988,7 +988,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong MultipliedWith(this ulong x, byte y) => x * y;
+        public static ulong MultipliedWith(this ulong x, byte y) => x * (ulong)y;
 
         /// <summary>
         /// Multiplies char with ulong
@@ -996,7 +996,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong MultipliedWith(this ulong x, char y) => x * y;
+        public static ulong MultipliedWith(this ulong x, char y) => x * (ulong)y;
 
         /// <summary>
         /// Multiplies decimal with ulong
@@ -1060,7 +1060,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong MultipliedWith(this ulong x, uint y) => x * y;
+        public static ulong MultipliedWith(this ulong x, uint y) => x * (ulong)y;
 
         /// <summary>
         /// Multiplies ulong with ulong
@@ -1076,7 +1076,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong MultipliedWith(this ulong x, ushort y) => x * y;
+        public static ulong MultipliedWith(this ulong x, ushort y) => x * (ulong)y;
 
         /// <summary>
         /// Gets the NOT of ulong
@@ -1091,7 +1091,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, byte y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, byte y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and ulong
@@ -1099,7 +1099,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, char y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, char y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and ulong
@@ -1131,7 +1131,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, int y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, int y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and ulong
@@ -1147,7 +1147,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, sbyte y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, sbyte y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and ulong
@@ -1155,7 +1155,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, short y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, short y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and ulong
@@ -1179,7 +1179,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Or(this ulong x, ushort y) => (ulong)((int)x | y);
+        public static ulong Or(this ulong x, ushort y) => (ulong)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -1187,7 +1187,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, byte value) => percent / 100 * value;
+        public static ulong PercentOf(this ulong percent, byte value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1195,7 +1195,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, char value) => percent / 100 * value;
+        public static ulong PercentOf(this ulong percent, char value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1203,7 +1203,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, decimal value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, decimal value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1211,7 +1211,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, double value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, double value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1219,7 +1219,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, float value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, float value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1227,7 +1227,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, int value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, int value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1235,7 +1235,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, long value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, long value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1243,7 +1243,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, sbyte value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, sbyte value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1251,7 +1251,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, short value) => percent / 100 * ((ulong)value);
+        public static ulong PercentOf(this ulong percent, short value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1259,7 +1259,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, uint value) => percent / 100 * value;
+        public static ulong PercentOf(this ulong percent, uint value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1267,7 +1267,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, ulong value) => percent / 100 * value;
+        public static ulong PercentOf(this ulong percent, ulong value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1275,199 +1275,441 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static ulong PercentOf(this ulong percent, ushort value) => percent / 100 * value;
+        public static ulong PercentOf(this ulong percent, ushort value) => (ulong)(((ulong)percent) / ((ulong)100) * ((ulong)value));
 
         /// <summary>
-        /// Substracts byte from ulong
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref ulong SetHighestValueOf(this ref ulong first, ulong second, ulong third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="ulong"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref ulong SetLowestValueOf(this ref ulong first, ulong second, ulong third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Subtracts byte from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Substract(this ulong x, byte y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,byte) instead.", false)]
+        public static ulong Substract(this ulong x, byte y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts char from ulong
+        /// Subtracts char from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Substract(this ulong x, char y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,char) instead.", false)]
+        public static ulong Substract(this ulong x, char y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts decimal from ulong
+        /// Subtracts decimal from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,decimal) instead.", false)]
         public static ulong Substract(this ulong x, decimal y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts double from ulong
+        /// Subtracts double from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,double) instead.", false)]
         public static ulong Substract(this ulong x, double y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts float from ulong
+        /// Subtracts float from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,float) instead.", false)]
         public static ulong Substract(this ulong x, float y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts int from ulong
+        /// Subtracts int from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,int) instead.", false)]
         public static ulong Substract(this ulong x, int y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts long from ulong
+        /// Subtracts long from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,long) instead.", false)]
         public static ulong Substract(this ulong x, long y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts sbyte from ulong
+        /// Subtracts sbyte from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,sbyte) instead.", false)]
         public static ulong Substract(this ulong x, sbyte y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts short from ulong
+        /// Subtracts short from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,short) instead.", false)]
         public static ulong Substract(this ulong x, short y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts uint from ulong
+        /// Subtracts uint from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Substract(this ulong x, uint y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,uint) instead.", false)]
+        public static ulong Substract(this ulong x, uint y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts ulong from ulong
+        /// Subtracts ulong from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,ulong) instead.", false)]
         public static ulong Substract(this ulong x, ulong y) => x - y;
 
         /// <summary>
-        /// Substracts ushort from ulong
+        /// Subtracts ushort from ulong
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Substract(this ulong x, ushort y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(ulong,ushort) instead.", false)]
+        public static ulong Substract(this ulong x, ushort y) => x - (ulong)y;
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, byte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, byte percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, char percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, char percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, decimal percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, decimal percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, double percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, double percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, float percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, float percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, int percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, int percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, long percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, long percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, sbyte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, sbyte percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, short percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, short percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, uint percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, uint percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, ulong percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, ulong percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static ulong SubstractPercent(this ulong value, ushort percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
+        public static ulong SubstractPercent(this ulong value, ushort percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, byte y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts char from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, char y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts decimal from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, decimal y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts double from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, double y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts float from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, float y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts int from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, int y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts long from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, long y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts sbyte from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, sbyte y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts short from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, short y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts uint from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, uint y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts ulong from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, ulong y) => x - y;
+
+        /// <summary>
+        /// Subtracts ushort from ulong
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static ulong Subtract(this ulong x, ushort y) => x - (ulong)y;
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, byte percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, char percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, decimal percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, double percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, float percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, int percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, long percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, sbyte percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, short percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, uint percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, ulong percent) => (ulong)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static ulong SubtractPercent(this ulong value, ushort percent) => (ulong)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
@@ -1477,11 +1719,12 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <returns>
         /// The value from the second variable and sets second variable to original value
         /// </returns>
-        public static ulong SwapWith(this ulong first, ref ulong second)
+        public static ref ulong SwapWith(this ref ulong first, ref ulong second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1490,7 +1733,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Xor(this ulong x, byte y) => x ^ y;
+        public static ulong Xor(this ulong x, byte y) => x ^ (ulong)y;
 
         /// <summary>
         /// Gets XOR of char of ulong
@@ -1498,7 +1741,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Xor(this ulong x, char y) => x ^ y;
+        public static ulong Xor(this ulong x, char y) => x ^ (ulong)y;
 
         /// <summary>
         /// Gets XOR of decimal of ulong
@@ -1562,7 +1805,7 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Xor(this ulong x, uint y) => x ^ y;
+        public static ulong Xor(this ulong x, uint y) => x ^ (ulong)y;
 
         /// <summary>
         /// Gets XOR of ulong of ulong
@@ -1578,6 +1821,6 @@ namespace MarcusMedinaPro.TypedMath.UlongExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static ulong Xor(this ulong x, ushort y) => x ^ y;
+        public static ulong Xor(this ulong x, ushort y) => x ^ (ulong)y;
     }
 }

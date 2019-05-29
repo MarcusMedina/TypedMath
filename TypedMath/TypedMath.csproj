@@ -47,18 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ByteExtension\TypedMathByteExtension.cs" />
-      <Compile Include="CharExtension\TypedMathCharExtension.cs" />
-      <Compile Include="DecimalExtension\TypedMathDecimalExtension.cs" />
-      <Compile Include="DoubleExtension\TypedMathDoubleExtension.cs" />
-      <Compile Include="FloatExtension\TypedMathFloatExtension.cs" />
-      <Compile Include="IntExtension\TypedMathIntExtension.cs" />
-      <Compile Include="LongExtension\TypedMathLongExtension.cs" />
-      <Compile Include="SbyteExtension\TypedMathSbyteExtension.cs" />
-      <Compile Include="ShortExtension\TypedMathShortExtension.cs" />
-      <Compile Include="UintExtension\TypedMathUintExtension.cs" />
-      <Compile Include="UlongExtension\TypedMathUlongExtension.cs" />
-      <Compile Include="UshortExtension\TypedMathUshortExtension.cs" />
-      <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CharExtension\TypedMathCharExtension.cs" />
+    <Compile Include="DecimalExtension\TypedMathDecimalExtension.cs" />
+    <Compile Include="DoubleExtension\TypedMathDoubleExtension.cs" />
+    <Compile Include="FloatExtension\TypedMathFloatExtension.cs" />
+    <Compile Include="IntExtension\TypedMathIntExtension.cs" />
+    <Compile Include="LongExtension\TypedMathLongExtension.cs" />
+    <Compile Include="SbyteExtension\TypedMathSbyteExtension.cs" />
+    <Compile Include="ShortExtension\TypedMathShortExtension.cs" />
+    <Compile Include="UintExtension\TypedMathUintExtension.cs" />
+    <Compile Include="UlongExtension\TypedMathUlongExtension.cs" />
+    <Compile Include="UshortExtension\TypedMathUshortExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AdditionalFiles Include="..\ReadMe.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AdditionalFiles>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons8-Ios7-Science-Math.ico" />

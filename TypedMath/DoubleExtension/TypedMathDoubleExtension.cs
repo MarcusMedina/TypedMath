@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, byte y) => x + y;
+        public static double Add(this double x, byte y) => x + (double)y;
 
         /// <summary>
         /// Adds char to double
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, char y) => x + y;
+        public static double Add(this double x, char y) => x + (double)y;
 
         /// <summary>
         /// Adds decimal to double
@@ -56,7 +56,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, float y) => x + y;
+        public static double Add(this double x, float y) => x + (double)y;
 
         /// <summary>
         /// Adds int to double
@@ -64,7 +64,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, int y) => x + y;
+        public static double Add(this double x, int y) => x + (double)y;
 
         /// <summary>
         /// Adds long to double
@@ -72,7 +72,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, long y) => x + y;
+        public static double Add(this double x, long y) => x + (double)y;
 
         /// <summary>
         /// Adds sbyte to double
@@ -80,7 +80,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, sbyte y) => x + y;
+        public static double Add(this double x, sbyte y) => x + (double)y;
 
         /// <summary>
         /// Adds short to double
@@ -88,7 +88,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, short y) => x + y;
+        public static double Add(this double x, short y) => x + (double)y;
 
         /// <summary>
         /// Adds uint to double
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, uint y) => x + y;
+        public static double Add(this double x, uint y) => x + (double)y;
 
         /// <summary>
         /// Adds ulong to double
@@ -104,7 +104,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, ulong y) => x + y;
+        public static double Add(this double x, ulong y) => x + (double)y;
 
         /// <summary>
         /// Adds ushort to double
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Add(this double x, ushort y) => x + y;
+        public static double Add(this double x, ushort y) => x + (double)y;
 
         /// <summary>
         /// Adds the percent of the value
@@ -120,7 +120,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, byte percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, byte percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -128,7 +128,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, char percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, char percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -136,7 +136,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, decimal percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, decimal percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -144,7 +144,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, double percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, double percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -152,7 +152,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, float percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, float percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -160,7 +160,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, int percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, int percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -168,7 +168,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, long percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, long percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -176,7 +176,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, sbyte percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, sbyte percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -184,7 +184,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, short percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, short percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -192,7 +192,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, uint percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, uint percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -200,7 +200,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, ulong percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, ulong percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -208,7 +208,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double AddPercent(this double value, ushort percent) => value + value.PercentOf(percent);
+        public static double AddPercent(this double value, ushort percent) => (double)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Tries to cast double to byte, this can get ugly though
@@ -293,7 +293,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static double ChooseHighestValue(this double first, double second) => first > second ? first : second;
+        public static double ChooseIfHigher(this double first, double second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -301,7 +301,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static double ChooseLowestValue(this double first, double second) => first < second ? first : second;
+        public static double ChooseIfLower(this double first, double second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from double
@@ -309,7 +309,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, byte y) => x / y;
+        public static double DividedBy(this double x, byte y) => x / (double)y;
 
         /// <summary>
         /// Divides char from double
@@ -317,7 +317,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, char y) => x / y;
+        public static double DividedBy(this double x, char y) => x / (double)y;
 
         /// <summary>
         /// Divides decimal from double
@@ -341,7 +341,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, float y) => x / y;
+        public static double DividedBy(this double x, float y) => x / (double)y;
 
         /// <summary>
         /// Divides int from double
@@ -349,7 +349,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, int y) => x / y;
+        public static double DividedBy(this double x, int y) => x / (double)y;
 
         /// <summary>
         /// Divides long from double
@@ -357,7 +357,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, long y) => x / y;
+        public static double DividedBy(this double x, long y) => x / (double)y;
 
         /// <summary>
         /// Divides sbyte from double
@@ -365,7 +365,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, sbyte y) => x / y;
+        public static double DividedBy(this double x, sbyte y) => x / (double)y;
 
         /// <summary>
         /// Divides short from double
@@ -373,7 +373,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, short y) => x / y;
+        public static double DividedBy(this double x, short y) => x / (double)y;
 
         /// <summary>
         /// Divides uint from double
@@ -381,7 +381,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, uint y) => x / y;
+        public static double DividedBy(this double x, uint y) => x / (double)y;
 
         /// <summary>
         /// Divides ulong from double
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, ulong y) => x / y;
+        public static double DividedBy(this double x, ulong y) => x / (double)y;
 
         /// <summary>
         /// Divides ushort from double
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double DividedBy(this double x, ushort y) => x / y;
+        public static double DividedBy(this double x, ushort y) => x / (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than byte
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, byte y) => x > y;
+        public static bool GreaterThan(this double x, byte y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than char
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, char y) => x > y;
+        public static bool GreaterThan(this double x, char y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than decimal
@@ -437,7 +437,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, float y) => x > y;
+        public static bool GreaterThan(this double x, float y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than int
@@ -445,7 +445,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, int y) => x > y;
+        public static bool GreaterThan(this double x, int y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than long
@@ -453,7 +453,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, long y) => x > y;
+        public static bool GreaterThan(this double x, long y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than sbyte
@@ -461,7 +461,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, sbyte y) => x > y;
+        public static bool GreaterThan(this double x, sbyte y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than short
@@ -469,7 +469,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, short y) => x > y;
+        public static bool GreaterThan(this double x, short y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than uint
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, uint y) => x > y;
+        public static bool GreaterThan(this double x, uint y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than ulong
@@ -485,7 +485,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, ulong y) => x > y;
+        public static bool GreaterThan(this double x, ulong y) => x > (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is greater than ushort
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this double x, ushort y) => x > y;
+        public static bool GreaterThan(this double x, ushort y) => x > (double)y;
 
         /// <summary>
         /// Gets boolean True if byte is equal to double
@@ -501,7 +501,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, byte y) => (decimal)x == y;
+        public static bool IsEqual(this double x, byte y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if char is equal to double
@@ -509,7 +509,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, char y) => (decimal)x == y;
+        public static bool IsEqual(this double x, char y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if decimal is equal to double
@@ -517,7 +517,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, decimal y) => (decimal)x == y;
+        public static bool IsEqual(this double x, decimal y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if double is equal to double
@@ -541,7 +541,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, int y) => (decimal)x == y;
+        public static bool IsEqual(this double x, int y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if long is equal to double
@@ -549,7 +549,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, long y) => (decimal)x == y;
+        public static bool IsEqual(this double x, long y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if sbyte is equal to double
@@ -557,7 +557,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, sbyte y) => (decimal)x == y;
+        public static bool IsEqual(this double x, sbyte y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if short is equal to double
@@ -565,7 +565,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, short y) => (decimal)x == y;
+        public static bool IsEqual(this double x, short y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if uint is equal to double
@@ -573,7 +573,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, uint y) => (decimal)x == y;
+        public static bool IsEqual(this double x, uint y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if ulong is equal to double
@@ -581,7 +581,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, ulong y) => (decimal)x == y;
+        public static bool IsEqual(this double x, ulong y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean True if ushort is equal to double
@@ -589,7 +589,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqual(this double x, ushort y) => (decimal)x == y;
+        public static bool IsEqual(this double x, ushort y) => (decimal)x == (decimal)y;
 
         /// <summary>
         /// Gets boolean true if value is less than zero
@@ -604,7 +604,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, byte y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, byte y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if char is not equal to double
@@ -612,7 +612,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, char y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, char y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if decimal is not equal to double
@@ -620,7 +620,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, decimal y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, decimal y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if double is not equal to double
@@ -644,7 +644,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, int y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, int y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if long is not equal to double
@@ -652,7 +652,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, long y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, long y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if sbyte is not equal to double
@@ -660,7 +660,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, sbyte y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, sbyte y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if short is not equal to double
@@ -668,7 +668,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, short y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, short y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if uint is not equal to double
@@ -676,7 +676,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, uint y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, uint y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if ulong is not equal to double
@@ -684,7 +684,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, ulong y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, ulong y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean True if ushort is not equal to double
@@ -692,7 +692,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqual(this double x, ushort y) => (decimal)x != y;
+        public static bool IsNotEqual(this double x, ushort y) => (decimal)x != (decimal)y;
 
         /// <summary>
         /// Gets boolean true if value is more than zero
@@ -714,7 +714,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, byte y) => x < y;
+        public static bool LessThan(this double x, byte y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than char
@@ -722,7 +722,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, char y) => x < y;
+        public static bool LessThan(this double x, char y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than decimal
@@ -746,7 +746,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, float y) => x < y;
+        public static bool LessThan(this double x, float y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than int
@@ -754,7 +754,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, int y) => x < y;
+        public static bool LessThan(this double x, int y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than long
@@ -762,7 +762,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, long y) => x < y;
+        public static bool LessThan(this double x, long y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than sbyte
@@ -770,7 +770,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, sbyte y) => x < y;
+        public static bool LessThan(this double x, sbyte y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than short
@@ -778,7 +778,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, short y) => x < y;
+        public static bool LessThan(this double x, short y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than uint
@@ -786,7 +786,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, uint y) => x < y;
+        public static bool LessThan(this double x, uint y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than ulong
@@ -794,7 +794,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, ulong y) => x < y;
+        public static bool LessThan(this double x, ulong y) => x < (double)y;
 
         /// <summary>
         /// Gets a boolean True if double is less than ushort
@@ -802,7 +802,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this double x, ushort y) => x < y;
+        public static bool LessThan(this double x, ushort y) => x < (double)y;
 
         /// <summary>
         /// Gets the remainder of byte from double
@@ -810,7 +810,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, byte y) => x % y;
+        public static double Modulus(this double x, byte y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of char from double
@@ -818,7 +818,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, char y) => x % y;
+        public static double Modulus(this double x, char y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of decimal from double
@@ -842,7 +842,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, float y) => x % y;
+        public static double Modulus(this double x, float y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of int from double
@@ -850,7 +850,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, int y) => x % y;
+        public static double Modulus(this double x, int y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of long from double
@@ -858,7 +858,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, long y) => x % y;
+        public static double Modulus(this double x, long y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of sbyte from double
@@ -866,7 +866,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, sbyte y) => x % y;
+        public static double Modulus(this double x, sbyte y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of short from double
@@ -874,7 +874,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, short y) => x % y;
+        public static double Modulus(this double x, short y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of uint from double
@@ -882,7 +882,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, uint y) => x % y;
+        public static double Modulus(this double x, uint y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of ulong from double
@@ -890,7 +890,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, ulong y) => x % y;
+        public static double Modulus(this double x, ulong y) => x % (double)y;
 
         /// <summary>
         /// Gets the remainder of ushort from double
@@ -898,7 +898,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Modulus(this double x, ushort y) => x % y;
+        public static double Modulus(this double x, ushort y) => x % (double)y;
 
         /// <summary>
         /// Multiplies byte with double
@@ -906,7 +906,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, byte y) => x * y;
+        public static double MultipliedWith(this double x, byte y) => x * (double)y;
 
         /// <summary>
         /// Multiplies char with double
@@ -914,7 +914,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, char y) => x * y;
+        public static double MultipliedWith(this double x, char y) => x * (double)y;
 
         /// <summary>
         /// Multiplies decimal with double
@@ -938,7 +938,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, float y) => x * y;
+        public static double MultipliedWith(this double x, float y) => x * (double)y;
 
         /// <summary>
         /// Multiplies int with double
@@ -946,7 +946,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, int y) => x * y;
+        public static double MultipliedWith(this double x, int y) => x * (double)y;
 
         /// <summary>
         /// Multiplies long with double
@@ -954,7 +954,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, long y) => x * y;
+        public static double MultipliedWith(this double x, long y) => x * (double)y;
 
         /// <summary>
         /// Multiplies sbyte with double
@@ -962,7 +962,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, sbyte y) => x * y;
+        public static double MultipliedWith(this double x, sbyte y) => x * (double)y;
 
         /// <summary>
         /// Multiplies short with double
@@ -970,7 +970,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, short y) => x * y;
+        public static double MultipliedWith(this double x, short y) => x * (double)y;
 
         /// <summary>
         /// Multiplies uint with double
@@ -978,7 +978,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, uint y) => x * y;
+        public static double MultipliedWith(this double x, uint y) => x * (double)y;
 
         /// <summary>
         /// Multiplies ulong with double
@@ -986,7 +986,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, ulong y) => x * y;
+        public static double MultipliedWith(this double x, ulong y) => x * (double)y;
 
         /// <summary>
         /// Multiplies ushort with double
@@ -994,14 +994,14 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double MultipliedWith(this double x, ushort y) => x * y;
+        public static double MultipliedWith(this double x, ushort y) => x * (double)y;
 
         /// <summary>
         /// Gets the NOT of double
         /// </summary>
         /// <param name="x">The x <see cref="double"/></param>
         /// <returns>The result of the operation</returns>
-        public static double Not(this double x) => ~(int)x;
+        public static double Not(this double x) => (double)~(int)x;
 
         /// <summary>
         /// Gets the percent of the value
@@ -1009,7 +1009,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, byte value) => percent / 100 * value;
+        public static double PercentOf(this double percent, byte value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1017,7 +1017,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, char value) => percent / 100 * value;
+        public static double PercentOf(this double percent, char value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1025,7 +1025,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, decimal value) => percent / 100 * ((double)value);
+        public static double PercentOf(this double percent, decimal value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1033,7 +1033,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, double value) => percent / 100 * value;
+        public static double PercentOf(this double percent, double value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1041,7 +1041,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, float value) => percent / 100 * value;
+        public static double PercentOf(this double percent, float value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1049,7 +1049,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, int value) => percent / 100 * value;
+        public static double PercentOf(this double percent, int value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1057,7 +1057,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, long value) => percent / 100 * value;
+        public static double PercentOf(this double percent, long value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1065,7 +1065,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, sbyte value) => percent / 100 * value;
+        public static double PercentOf(this double percent, sbyte value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1073,7 +1073,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, short value) => percent / 100 * value;
+        public static double PercentOf(this double percent, short value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1081,7 +1081,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, uint value) => percent / 100 * value;
+        public static double PercentOf(this double percent, uint value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1089,7 +1089,7 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, ulong value) => percent / 100 * value;
+        public static double PercentOf(this double percent, ulong value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1097,211 +1097,454 @@ namespace MarcusMedinaPro.TypedMath.DoubleExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static double PercentOf(this double percent, ushort value) => percent / 100 * value;
+        public static double PercentOf(this double percent, ushort value) => (double)(((double)percent) / ((double)100) * ((double)value));
 
         /// <summary>
-        /// Substracts byte from double
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref double SetHighestValueOf(this ref double first, double second, double third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="double"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref double SetLowestValueOf(this ref double first, double second, double third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Subtracts byte from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, byte y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,byte) instead.", false)]
+        public static double Substract(this double x, byte y) => x - (double)y;
 
         /// <summary>
-        /// Substracts char from double
+        /// Subtracts char from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, char y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,char) instead.", false)]
+        public static double Substract(this double x, char y) => x - (double)y;
 
         /// <summary>
-        /// Substracts decimal from double
+        /// Subtracts decimal from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,decimal) instead.", false)]
         public static double Substract(this double x, decimal y) => x - (double)y;
 
         /// <summary>
-        /// Substracts double from double
+        /// Subtracts double from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,double) instead.", false)]
         public static double Substract(this double x, double y) => x - y;
 
         /// <summary>
-        /// Substracts float from double
+        /// Subtracts float from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, float y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,float) instead.", false)]
+        public static double Substract(this double x, float y) => x - (double)y;
 
         /// <summary>
-        /// Substracts int from double
+        /// Subtracts int from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, int y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,int) instead.", false)]
+        public static double Substract(this double x, int y) => x - (double)y;
 
         /// <summary>
-        /// Substracts long from double
+        /// Subtracts long from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, long y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,long) instead.", false)]
+        public static double Substract(this double x, long y) => x - (double)y;
 
         /// <summary>
-        /// Substracts sbyte from double
+        /// Subtracts sbyte from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, sbyte y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,sbyte) instead.", false)]
+        public static double Substract(this double x, sbyte y) => x - (double)y;
 
         /// <summary>
-        /// Substracts short from double
+        /// Subtracts short from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, short y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,short) instead.", false)]
+        public static double Substract(this double x, short y) => x - (double)y;
 
         /// <summary>
-        /// Substracts uint from double
+        /// Subtracts uint from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, uint y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,uint) instead.", false)]
+        public static double Substract(this double x, uint y) => x - (double)y;
 
         /// <summary>
-        /// Substracts ulong from double
+        /// Subtracts ulong from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, ulong y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,ulong) instead.", false)]
+        public static double Substract(this double x, ulong y) => x - (double)y;
 
         /// <summary>
-        /// Substracts ushort from double
+        /// Subtracts ushort from double
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static double Substract(this double x, ushort y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(double,ushort) instead.", false)]
+        public static double Substract(this double x, ushort y) => x - (double)y;
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, byte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
+        public static double SubstractPercent(this double value, byte percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, char percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
+        public static double SubstractPercent(this double value, char percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, decimal percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
+        public static double SubstractPercent(this double value, decimal percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, double percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
+        public static double SubstractPercent(this double value, double percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, float percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
+        public static double SubstractPercent(this double value, float percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, int percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
+        public static double SubstractPercent(this double value, int percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, long percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
+        public static double SubstractPercent(this double value, long percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, sbyte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
+        public static double SubstractPercent(this double value, sbyte percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, short percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
+        public static double SubstractPercent(this double value, short percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, uint percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
+        public static double SubstractPercent(this double value, uint percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, ulong percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
+        public static double SubstractPercent(this double value, ulong percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static double SubstractPercent(this double value, ushort percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
+        public static double SubstractPercent(this double value, ushort percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, byte y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts char from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, char y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts decimal from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, decimal y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts double from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, double y) => x - y;
+
+        /// <summary>
+        /// Subtracts float from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, float y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts int from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, int y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts long from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, long y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts sbyte from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, sbyte y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts short from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, short y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts uint from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, uint y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts ulong from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, ulong y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts ushort from double
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static double Subtract(this double x, ushort y) => x - (double)y;
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, byte percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, char percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, decimal percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, double percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, float percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, int percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, long percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, sbyte percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, short percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, uint percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, ulong percent) => (double)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static double SubtractPercent(this double value, ushort percent) => (double)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>The <see cref="double"/></returns>
-        public static double SwapWith(this double first, ref double second)
+        /// <returns>The <see cref="ref double"/></returns>
+        public static ref double SwapWith(this ref double first, ref double second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Add(this uint x, byte y) => x + y;
+        public static uint Add(this uint x, byte y) => x + (uint)y;
 
         /// <summary>
         /// Adds char to uint
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Add(this uint x, char y) => x + y;
+        public static uint Add(this uint x, char y) => x + (uint)y;
 
         /// <summary>
         /// Adds decimal to uint
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Add(this uint x, ushort y) => x + y;
+        public static uint Add(this uint x, ushort y) => x + (uint)y;
 
         /// <summary>
         /// Adds the percent of the value
@@ -120,7 +120,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, byte percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, byte percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -128,7 +128,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, char percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, char percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -136,7 +136,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, decimal percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, decimal percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -144,7 +144,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, double percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, double percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -152,7 +152,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, float percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, float percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -160,7 +160,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, int percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, int percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -168,7 +168,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, long percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, long percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -176,7 +176,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, sbyte percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, sbyte percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -184,7 +184,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, short percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, short percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -192,7 +192,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, uint percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, uint percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -200,7 +200,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, ulong percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, ulong percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Adds the percent of the value
@@ -208,7 +208,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint AddPercent(this uint value, ushort percent) => value + value.PercentOf(percent);
+        public static uint AddPercent(this uint value, ushort percent) => (uint)(value + value.PercentOf(percent));
 
         /// <summary>
         /// Gets the AND of byte and uint
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint And(this uint x, byte y) => x & y;
+        public static uint And(this uint x, byte y) => x & (uint)y;
 
         /// <summary>
         /// Gets the AND of char and uint
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint And(this uint x, char y) => x & y;
+        public static uint And(this uint x, char y) => x & (uint)y;
 
         /// <summary>
         /// Gets the AND of decimal and uint
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint And(this uint x, ushort y) => x & y;
+        public static uint And(this uint x, ushort y) => x & (uint)y;
 
         /// <summary>
         /// Tries to cast uint to byte, this can get ugly though
@@ -325,21 +325,21 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// </summary>
         /// <param name="x">The x <see cref="uint"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastUintToDecimal(this uint x) => x;
+        public static decimal CastUintToDecimal(this uint x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast uint to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="uint"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastUintToDouble(this uint x) => x;
+        public static double CastUintToDouble(this uint x) => (double)x;
 
         /// <summary>
         /// Tries to cast uint to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="uint"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastUintToFloat(this uint x) => x;
+        public static float CastUintToFloat(this uint x) => (float)x;
 
         /// <summary>
         /// Tries to cast uint to int, this can get ugly though
@@ -353,7 +353,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// </summary>
         /// <param name="x">The x <see cref="uint"/></param>
         /// <returns>The result of the operation</returns>
-        public static long CastUintToLong(this uint x) => x;
+        public static long CastUintToLong(this uint x) => (long)x;
 
         /// <summary>
         /// Tries to cast uint to sbyte, this can get ugly though
@@ -374,7 +374,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// </summary>
         /// <param name="x">The x <see cref="uint"/></param>
         /// <returns>The result of the operation</returns>
-        public static ulong CastUintToUlong(this uint x) => x;
+        public static ulong CastUintToUlong(this uint x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast uint to ushort, this can get ugly though
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static uint ChooseHighestValue(this uint first, uint second) => first > second ? first : second;
+        public static uint ChooseIfHigher(this uint first, uint second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static uint ChooseLowestValue(this uint first, uint second) => first < second ? first : second;
+        public static uint ChooseIfLower(this uint first, uint second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from uint
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint DividedBy(this uint x, byte y) => x / y;
+        public static uint DividedBy(this uint x, byte y) => x / (uint)y;
 
         /// <summary>
         /// Divides char from uint
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint DividedBy(this uint x, char y) => x / y;
+        public static uint DividedBy(this uint x, char y) => x / (uint)y;
 
         /// <summary>
         /// Divides decimal from uint
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint DividedBy(this uint x, ushort y) => x / y;
+        public static uint DividedBy(this uint x, ushort y) => x / (uint)y;
 
         /// <summary>
         /// Gets a boolean True if uint is greater than byte
@@ -501,7 +501,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this uint x, byte y) => x > y;
+        public static bool GreaterThan(this uint x, byte y) => x > (uint)y;
 
         /// <summary>
         /// Gets a boolean True if uint is greater than char
@@ -509,7 +509,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this uint x, char y) => x > y;
+        public static bool GreaterThan(this uint x, char y) => x > (uint)y;
 
         /// <summary>
         /// Gets a boolean True if uint is greater than decimal
@@ -589,7 +589,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this uint x, ushort y) => x > y;
+        public static bool GreaterThan(this uint x, ushort y) => x > (uint)y;
 
         /// <summary>
         /// Gets boolean True if byte is equal to uint
@@ -597,7 +597,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this uint x, byte y) => x == y;
+        public static bool IsEqualTo(this uint x, byte y) => x == (uint)y;
 
         /// <summary>
         /// Gets boolean True if char is equal to uint
@@ -605,7 +605,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this uint x, char y) => x == y;
+        public static bool IsEqualTo(this uint x, char y) => x == (uint)y;
 
         /// <summary>
         /// Gets boolean True if decimal is equal to uint
@@ -685,7 +685,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this uint x, ushort y) => x == y;
+        public static bool IsEqualTo(this uint x, ushort y) => x == (uint)y;
 
         /// <summary>
         /// Gets boolean True if byte is not equal to uint
@@ -693,7 +693,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this uint x, byte y) => x != y;
+        public static bool IsNotEqualTo(this uint x, byte y) => x != (uint)y;
 
         /// <summary>
         /// Gets boolean True if char is not equal to uint
@@ -701,7 +701,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this uint x, char y) => x != y;
+        public static bool IsNotEqualTo(this uint x, char y) => x != (uint)y;
 
         /// <summary>
         /// Gets boolean True if decimal is not equal to uint
@@ -781,7 +781,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this uint x, ushort y) => x != y;
+        public static bool IsNotEqualTo(this uint x, ushort y) => x != (uint)y;
 
         /// <summary>
         /// Checks if a number is prime
@@ -796,7 +796,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this uint x, byte y) => x < y;
+        public static bool LessThan(this uint x, byte y) => x < (uint)y;
 
         /// <summary>
         /// Gets a boolean True if uint is less than char
@@ -804,7 +804,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this uint x, char y) => x < y;
+        public static bool LessThan(this uint x, char y) => x < (uint)y;
 
         /// <summary>
         /// Gets a boolean True if uint is less than decimal
@@ -884,7 +884,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this uint x, ushort y) => x < y;
+        public static bool LessThan(this uint x, ushort y) => x < (uint)y;
 
         /// <summary>
         /// Gets the remainder of byte from uint
@@ -892,7 +892,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Modulus(this uint x, byte y) => x % y;
+        public static uint Modulus(this uint x, byte y) => x % (uint)y;
 
         /// <summary>
         /// Gets the remainder of char from uint
@@ -900,7 +900,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Modulus(this uint x, char y) => x % y;
+        public static uint Modulus(this uint x, char y) => x % (uint)y;
 
         /// <summary>
         /// Gets the remainder of decimal from uint
@@ -980,7 +980,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Modulus(this uint x, ushort y) => x % y;
+        public static uint Modulus(this uint x, ushort y) => x % (uint)y;
 
         /// <summary>
         /// Multiplies byte with uint
@@ -988,7 +988,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint MultipliedWith(this uint x, byte y) => x * y;
+        public static uint MultipliedWith(this uint x, byte y) => x * (uint)y;
 
         /// <summary>
         /// Multiplies char with uint
@@ -996,7 +996,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint MultipliedWith(this uint x, char y) => x * y;
+        public static uint MultipliedWith(this uint x, char y) => x * (uint)y;
 
         /// <summary>
         /// Multiplies decimal with uint
@@ -1076,7 +1076,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint MultipliedWith(this uint x, ushort y) => x * y;
+        public static uint MultipliedWith(this uint x, ushort y) => x * (uint)y;
 
         /// <summary>
         /// Gets the NOT of uint
@@ -1091,7 +1091,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, byte y) => (uint)((int)x | y);
+        public static uint Or(this uint x, byte y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and uint
@@ -1099,7 +1099,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, char y) => (uint)((int)x | y);
+        public static uint Or(this uint x, char y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and uint
@@ -1131,7 +1131,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, int y) => (uint)((int)x | y);
+        public static uint Or(this uint x, int y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and uint
@@ -1147,7 +1147,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, sbyte y) => (uint)((int)x | y);
+        public static uint Or(this uint x, sbyte y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and uint
@@ -1155,7 +1155,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, short y) => (uint)((int)x | y);
+        public static uint Or(this uint x, short y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and uint
@@ -1179,7 +1179,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Or(this uint x, ushort y) => (uint)((int)x | y);
+        public static uint Or(this uint x, ushort y) => (uint)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -1187,7 +1187,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, byte value) => percent / 100 * value;
+        public static uint PercentOf(this uint percent, byte value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1195,7 +1195,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, char value) => percent / 100 * value;
+        public static uint PercentOf(this uint percent, char value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1203,7 +1203,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, decimal value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, decimal value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1211,7 +1211,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, double value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, double value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1219,7 +1219,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, float value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, float value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1227,7 +1227,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, int value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, int value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1235,7 +1235,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, long value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, long value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1243,7 +1243,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, sbyte value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, sbyte value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1251,7 +1251,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, short value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, short value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1259,7 +1259,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, uint value) => percent / 100 * value;
+        public static uint PercentOf(this uint percent, uint value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1267,7 +1267,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, ulong value) => percent / 100 * ((uint)value);
+        public static uint PercentOf(this uint percent, ulong value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1275,199 +1275,441 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static uint PercentOf(this uint percent, ushort value) => percent / 100 * value;
+        public static uint PercentOf(this uint percent, ushort value) => (uint)(((uint)percent) / ((uint)100) * ((uint)value));
 
         /// <summary>
-        /// Substracts byte from uint
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref uint SetHighestValueOf(this ref uint first, uint second, uint third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="uint"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref uint SetLowestValueOf(this ref uint first, uint second, uint third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Subtracts byte from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Substract(this uint x, byte y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,byte) instead.", false)]
+        public static uint Substract(this uint x, byte y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts char from uint
+        /// Subtracts char from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Substract(this uint x, char y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,char) instead.", false)]
+        public static uint Substract(this uint x, char y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts decimal from uint
+        /// Subtracts decimal from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,decimal) instead.", false)]
         public static uint Substract(this uint x, decimal y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts double from uint
+        /// Subtracts double from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,double) instead.", false)]
         public static uint Substract(this uint x, double y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts float from uint
+        /// Subtracts float from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,float) instead.", false)]
         public static uint Substract(this uint x, float y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts int from uint
+        /// Subtracts int from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,int) instead.", false)]
         public static uint Substract(this uint x, int y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts long from uint
+        /// Subtracts long from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,long) instead.", false)]
         public static uint Substract(this uint x, long y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts sbyte from uint
+        /// Subtracts sbyte from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,sbyte) instead.", false)]
         public static uint Substract(this uint x, sbyte y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts short from uint
+        /// Subtracts short from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,short) instead.", false)]
         public static uint Substract(this uint x, short y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts uint from uint
+        /// Subtracts uint from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,uint) instead.", false)]
         public static uint Substract(this uint x, uint y) => x - y;
 
         /// <summary>
-        /// Substracts ulong from uint
+        /// Subtracts ulong from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,ulong) instead.", false)]
         public static uint Substract(this uint x, ulong y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts ushort from uint
+        /// Subtracts ushort from uint
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Substract(this uint x, ushort y) => x - y;
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(uint,ushort) instead.", false)]
+        public static uint Substract(this uint x, ushort y) => x - (uint)y;
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, byte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
+        public static uint SubstractPercent(this uint value, byte percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, char percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
+        public static uint SubstractPercent(this uint value, char percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, decimal percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
+        public static uint SubstractPercent(this uint value, decimal percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, double percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
+        public static uint SubstractPercent(this uint value, double percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, float percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
+        public static uint SubstractPercent(this uint value, float percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, int percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
+        public static uint SubstractPercent(this uint value, int percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, long percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
+        public static uint SubstractPercent(this uint value, long percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, sbyte percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
+        public static uint SubstractPercent(this uint value, sbyte percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, short percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
+        public static uint SubstractPercent(this uint value, short percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, uint percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
+        public static uint SubstractPercent(this uint value, uint percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, ulong percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
+        public static uint SubstractPercent(this uint value, ulong percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
-        public static uint SubstractPercent(this uint value, ushort percent) => value - value.PercentOf(percent);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
+        public static uint SubstractPercent(this uint value, ushort percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, byte y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts char from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, char y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts decimal from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, decimal y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts double from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, double y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts float from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, float y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts int from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, int y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts long from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, long y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts sbyte from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, sbyte y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts short from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, short y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts uint from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, uint y) => x - y;
+
+        /// <summary>
+        /// Subtracts ulong from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, ulong y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts ushort from uint
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static uint Subtract(this uint x, ushort y) => x - (uint)y;
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, byte percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, char percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, decimal percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, double percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, float percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, int percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, long percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, sbyte percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, short percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, uint percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, ulong percent) => (uint)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static uint SubtractPercent(this uint value, ushort percent) => (uint)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
@@ -1477,11 +1719,12 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <returns>
         /// The value from the second variable and sets second variable to original value
         /// </returns>
-        public static uint SwapWith(this uint first, ref uint second)
+        public static ref uint SwapWith(this ref uint first, ref uint second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1490,7 +1733,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Xor(this uint x, byte y) => x ^ y;
+        public static uint Xor(this uint x, byte y) => x ^ (uint)y;
 
         /// <summary>
         /// Gets XOR of char of uint
@@ -1498,7 +1741,7 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Xor(this uint x, char y) => x ^ y;
+        public static uint Xor(this uint x, char y) => x ^ (uint)y;
 
         /// <summary>
         /// Gets XOR of decimal of uint
@@ -1578,6 +1821,6 @@ namespace MarcusMedinaPro.TypedMath.UintExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static uint Xor(this uint x, ushort y) => x ^ y;
+        public static uint Xor(this uint x, ushort y) => x ^ (uint)y;
     }
 }

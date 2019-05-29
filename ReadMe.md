@@ -36,6 +36,10 @@ This project is nothing magical, actually, most of the functions are oneliners. 
 
 ## Changes
 20190524 - Added Percent, Highest, Lowest, Swap
+20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf
+           Added SetHighestValueOf/SetLowestValueOf
+           Swap uses reference now
+20190529 - Corrected missspelling in Subtract and added Obsolete tag to the misspelled method
 
 ## Examples
 Here is the list of functions available for most of the types. In this example I'm using *double*
@@ -106,15 +110,15 @@ Check if the value is positive or negative
     }
 ```
 
-Add and Substract can also be done in typed form.
+Add and Subtract can also be done in typed form.
 ```C#
     // double Add(...);
     double y = 12;
     int x=14;
     var res = y.Add(x);
 
-    // double Substract(...);
-    res = y.Substract(x);
+    // double Subtract(...);
+    res = y.Subtract(x);
 ```
 
 Divide, Multiply and Modulus are also available
@@ -175,34 +179,43 @@ You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right
     var test6 = 24.ShiftRight(1);
 ```
 
-Another nifty function is to be able to check if the current number is a prime number.
-```C#
-    var x = 5.IsPrime();
-```
-
 ## New features added
-You can get the percent, add and substract percent from a value.
+You can get the percent, add and Subtract percent from a value.
 ```C#
     var money = 1500.5;
     var x = 15.2.PercentOf(money);
 
     money = money.AddPercent(20); // same as money += 20.PercentOf(money);
-    money = money.SubstractPercent(20); // same as money -= 20.PercentOf(money);
+    money = money.SubtractPercent(20); // same as money -= 20.PercentOf(money);
 ```
 Choose highest or lowest number. It's a as simple as it sounds.
 ```C#
     var value1 = 50;
     var value2 = 32;
 
-    var x = value1.ChooseHighestValue(value2);
-    var y = value2.ChooseLowestValue(value1);
+    var x = value1.ChooseIfHigher(value2);
+    var y = value2.ChooseIfLower(value1);
 ```
 
 Swap values if you'd ever need it.
 ```C#
     var x = 10;
     var y = 20;
-    y = y.SwapWith(ref x); // x == 20, Y == 10;
+    y.SwapWith(ref x); // x == 20, Y == 10;
+```
+Choose highest or lowest number and set the variable. It's a as simple as it sounds.
+```C#
+    var x = 0;
+    var y = 0;
+    var value1 = 50;
+    var value2 = 32;
+
+    x.SetHighestValueOf(value1,value2);
+    y.SetLowestValueOf(value1, value2);
+```
+Another nifty function is to be able to check if the current number is a prime number.
+```C#
+    var x = 5.IsPrime();
 ```
 
 ## Source code
@@ -212,7 +225,7 @@ You can find the code at https://github.com/MarcusMedina/TypedMath
 The nuget is available at https://www.nuget.org/packages/TypedMath/
 
 ## Collaboration
-Feel free to add suggest or send a pull request to my github.
+Feel free to add, suggest or request a feature. If you want to help develop this nuget, feel free to senda Pull Request.
 
 ## Borrowed code
 * LinQ Primenumbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/

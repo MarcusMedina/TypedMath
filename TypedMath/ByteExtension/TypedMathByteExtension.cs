@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, byte y) => (byte)(x + y);
+        public static byte Add(this byte x, byte y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds char to byte
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, char y) => (byte)(x + y);
+        public static byte Add(this byte x, char y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds decimal to byte
@@ -40,7 +40,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, decimal y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, decimal y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds double to byte
@@ -48,7 +48,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, double y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, double y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds float to byte
@@ -56,7 +56,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, float y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, float y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds int to byte
@@ -64,7 +64,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, int y) => (byte)(x + y);
+        public static byte Add(this byte x, int y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds long to byte
@@ -72,7 +72,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, long y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, long y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds sbyte to byte
@@ -80,7 +80,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, sbyte y) => (byte)(x + y);
+        public static byte Add(this byte x, sbyte y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds short to byte
@@ -88,7 +88,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, short y) => (byte)(x + y);
+        public static byte Add(this byte x, short y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds uint to byte
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, uint y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, uint y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds ulong to byte
@@ -104,7 +104,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, ulong y) => (byte)(x + (int)y);
+        public static byte Add(this byte x, ulong y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds ushort to byte
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Add(this byte x, ushort y) => (byte)(x + y);
+        public static byte Add(this byte x, ushort y) => (byte)((int)x + (int)y);
 
         /// <summary>
         /// Adds the percent of the value
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, byte y) => (byte)(x & y);
+        public static byte And(this byte x, byte y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of char and byte
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, char y) => (byte)(x & y);
+        public static byte And(this byte x, char y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of decimal and byte
@@ -232,7 +232,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, decimal y) => (byte)(x & (int)y);
+        public static byte And(this byte x, decimal y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of double and byte
@@ -240,7 +240,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, double y) => (byte)(x & (int)y);
+        public static byte And(this byte x, double y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of float and byte
@@ -248,7 +248,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, float y) => (byte)(x & (int)y);
+        public static byte And(this byte x, float y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of int and byte
@@ -256,7 +256,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, int y) => (byte)(x & y);
+        public static byte And(this byte x, int y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of long and byte
@@ -264,7 +264,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, long y) => (byte)(x & (int)y);
+        public static byte And(this byte x, long y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of sbyte and byte
@@ -272,7 +272,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, sbyte y) => (byte)(x & y);
+        public static byte And(this byte x, sbyte y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of short and byte
@@ -280,7 +280,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, short y) => (byte)(x & y);
+        public static byte And(this byte x, short y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of uint and byte
@@ -288,7 +288,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, uint y) => (byte)(x & (int)y);
+        public static byte And(this byte x, uint y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ulong and byte
@@ -296,7 +296,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, ulong y) => (byte)(x & (int)y);
+        public static byte And(this byte x, ulong y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ushort and byte
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte And(this byte x, ushort y) => (byte)(x & y);
+        public static byte And(this byte x, ushort y) => (byte)((int)x & (int)y);
 
         /// <summary>
         /// Tries to cast byte to char, this can get ugly though
@@ -318,35 +318,35 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastByteToDecimal(this byte x) => x;
+        public static decimal CastByteToDecimal(this byte x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast byte to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastByteToDouble(this byte x) => x;
+        public static double CastByteToDouble(this byte x) => (double)x;
 
         /// <summary>
         /// Tries to cast byte to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastByteToFloat(this byte x) => x;
+        public static float CastByteToFloat(this byte x) => (float)x;
 
         /// <summary>
         /// Tries to cast byte to int, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static int CastByteToInt(this byte x) => x;
+        public static int CastByteToInt(this byte x) => (int)x;
 
         /// <summary>
         /// Tries to cast byte to long, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static long CastByteToLong(this byte x) => x;
+        public static long CastByteToLong(this byte x) => (long)x;
 
         /// <summary>
         /// Tries to cast byte to sbyte, this can get ugly though
@@ -360,28 +360,28 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static short CastByteToShort(this byte x) => x;
+        public static short CastByteToShort(this byte x) => (short)x;
 
         /// <summary>
         /// Tries to cast byte to uint, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static uint CastByteToUint(this byte x) => x;
+        public static uint CastByteToUint(this byte x) => (uint)x;
 
         /// <summary>
         /// Tries to cast byte to ulong, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static ulong CastByteToUlong(this byte x) => x;
+        public static ulong CastByteToUlong(this byte x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast byte to ushort, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="byte"/></param>
         /// <returns>The result of the operation</returns>
-        public static ushort CastByteToUshort(this byte x) => x;
+        public static ushort CastByteToUshort(this byte x) => (ushort)x;
 
         /// <summary>
         /// Compare original and second number
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static byte ChooseHighestValue(this byte first, byte second) => first > second ? first : second;
+        public static byte ChooseIfHigher(this byte first, byte second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static byte ChooseLowestValue(this byte first, byte second) => first < second ? first : second;
+        public static byte ChooseIfLower(this byte first, byte second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from byte
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, byte y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, byte y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides char from byte
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, char y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, char y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides decimal from byte
@@ -421,7 +421,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, decimal y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, decimal y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides double from byte
@@ -429,7 +429,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, double y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, double y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides float from byte
@@ -437,7 +437,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, float y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, float y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides int from byte
@@ -445,7 +445,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, int y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, int y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides long from byte
@@ -453,7 +453,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, long y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, long y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides sbyte from byte
@@ -461,7 +461,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, sbyte y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, sbyte y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides short from byte
@@ -469,7 +469,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, short y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, short y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides uint from byte
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, uint y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, uint y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides ulong from byte
@@ -485,7 +485,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, ulong y) => (byte)(x / (int)y);
+        public static byte DividedBy(this byte x, ulong y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Divides ushort from byte
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte DividedBy(this byte x, ushort y) => (byte)(x / y);
+        public static byte DividedBy(this byte x, ushort y) => (byte)((int)x / (int)y);
 
         /// <summary>
         /// Gets boolean True if byte is equal to byte
@@ -700,7 +700,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, byte y) => (byte)(x % y);
+        public static byte Modulus(this byte x, byte y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of char from byte
@@ -708,7 +708,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, char y) => (byte)(x % y);
+        public static byte Modulus(this byte x, char y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of decimal from byte
@@ -716,7 +716,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, decimal y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, decimal y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of double from byte
@@ -724,7 +724,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, double y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, double y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of float from byte
@@ -732,7 +732,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, float y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, float y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of int from byte
@@ -740,7 +740,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, int y) => (byte)(x % y);
+        public static byte Modulus(this byte x, int y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of long from byte
@@ -748,7 +748,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, long y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, long y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of sbyte from byte
@@ -756,7 +756,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, sbyte y) => (byte)(x % y);
+        public static byte Modulus(this byte x, sbyte y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of short from byte
@@ -764,7 +764,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, short y) => (byte)(x % y);
+        public static byte Modulus(this byte x, short y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of uint from byte
@@ -772,7 +772,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, uint y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, uint y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ulong from byte
@@ -780,7 +780,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, ulong y) => (byte)(x % (int)y);
+        public static byte Modulus(this byte x, ulong y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ushort from byte
@@ -788,7 +788,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Modulus(this byte x, ushort y) => (byte)(x % y);
+        public static byte Modulus(this byte x, ushort y) => (byte)((int)x % (int)y);
 
         /// <summary>
         /// Multiplies byte with byte
@@ -796,7 +796,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, byte y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, byte y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies char with byte
@@ -804,7 +804,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, char y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, char y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies decimal with byte
@@ -812,7 +812,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, decimal y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, decimal y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies double with byte
@@ -820,7 +820,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, double y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, double y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies float with byte
@@ -828,7 +828,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, float y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, float y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies int with byte
@@ -836,7 +836,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, int y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, int y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies long with byte
@@ -844,7 +844,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, long y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, long y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies sbyte with byte
@@ -852,7 +852,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, sbyte y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, sbyte y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies short with byte
@@ -860,7 +860,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, short y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, short y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies uint with byte
@@ -868,7 +868,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, uint y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, uint y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ulong with byte
@@ -876,7 +876,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, ulong y) => (byte)(x * (int)y);
+        public static byte MultipliedWith(this byte x, ulong y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ushort with byte
@@ -884,7 +884,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte MultipliedWith(this byte x, ushort y) => (byte)(x * y);
+        public static byte MultipliedWith(this byte x, ushort y) => (byte)((int)x * (int)y);
 
         /// <summary>
         /// Gets the NOT of byte
@@ -899,7 +899,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, byte y) => (byte)(x | y);
+        public static byte Or(this byte x, byte y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and byte
@@ -907,7 +907,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, char y) => (byte)(x | y);
+        public static byte Or(this byte x, char y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and byte
@@ -915,7 +915,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, decimal y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, decimal y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of double and byte
@@ -923,7 +923,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, double y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, double y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of float and byte
@@ -931,7 +931,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, float y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, float y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of int and byte
@@ -939,7 +939,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, int y) => (byte)(x | y);
+        public static byte Or(this byte x, int y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and byte
@@ -947,7 +947,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, long y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, long y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of sbyte and byte
@@ -955,7 +955,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, sbyte y) => (byte)(x | y);
+        public static byte Or(this byte x, sbyte y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and byte
@@ -963,7 +963,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, short y) => (byte)(x | y);
+        public static byte Or(this byte x, short y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and byte
@@ -971,7 +971,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, uint y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, uint y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ulong and byte
@@ -979,7 +979,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, ulong y) => (byte)(x | (int)y);
+        public static byte Or(this byte x, ulong y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ushort and byte
@@ -987,7 +987,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Or(this byte x, ushort y) => (byte)(x | y);
+        public static byte Or(this byte x, ushort y) => (byte)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -995,7 +995,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, byte value) => (byte)(percent / 100 * value);
+        public static byte PercentOf(this byte percent, byte value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1003,7 +1003,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, char value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, char value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1011,7 +1011,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, decimal value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, decimal value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1019,7 +1019,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, double value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, double value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1027,7 +1027,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, float value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, float value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1035,7 +1035,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, int value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, int value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1043,7 +1043,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, long value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, long value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1051,7 +1051,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, sbyte value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, sbyte value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1059,7 +1059,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, short value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, short value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1067,7 +1067,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, uint value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, uint value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1075,7 +1075,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, ulong value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, ulong value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1083,7 +1083,33 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static byte PercentOf(this byte percent, ushort value) => (byte)(percent / 100 * ((byte)value));
+        public static byte PercentOf(this byte percent, ushort value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref byte SetHighestValueOf(this ref byte first, byte second, byte third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="byte"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref byte SetLowestValueOf(this ref byte first, byte second, byte third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
 
         /// <summary>
         /// Gets shift left of byte from byte
@@ -1091,7 +1117,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, byte y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, byte y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of char from byte
@@ -1099,7 +1125,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, char y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, char y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of decimal from byte
@@ -1107,7 +1133,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, decimal y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, decimal y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of double from byte
@@ -1115,7 +1141,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, double y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, double y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of float from byte
@@ -1123,7 +1149,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, float y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, float y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of int from byte
@@ -1131,7 +1157,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, int y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, int y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of long from byte
@@ -1139,7 +1165,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, long y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, long y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of sbyte from byte
@@ -1147,7 +1173,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, sbyte y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, sbyte y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of short from byte
@@ -1155,7 +1181,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, short y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, short y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of uint from byte
@@ -1163,7 +1189,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, uint y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, uint y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ulong from byte
@@ -1171,7 +1197,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, ulong y) => (byte)(x << (int)y);
+        public static byte ShiftLeft(this byte x, ulong y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ushort from byte
@@ -1179,7 +1205,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftLeft(this byte x, ushort y) => (byte)(x << y);
+        public static byte ShiftLeft(this byte x, ushort y) => (byte)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift right of byte from byte
@@ -1187,7 +1213,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, byte y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, byte y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of char from byte
@@ -1195,7 +1221,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, char y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, char y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of decimal from byte
@@ -1203,7 +1229,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, decimal y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, decimal y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of double from byte
@@ -1211,7 +1237,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, double y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, double y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of float from byte
@@ -1219,7 +1245,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, float y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, float y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of int from byte
@@ -1227,7 +1253,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, int y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, int y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of long from byte
@@ -1235,7 +1261,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, long y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, long y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of sbyte from byte
@@ -1243,7 +1269,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, sbyte y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, sbyte y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of short from byte
@@ -1251,7 +1277,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, short y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, short y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of uint from byte
@@ -1259,7 +1285,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, uint y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, uint y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ulong from byte
@@ -1267,7 +1293,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, ulong y) => (byte)(x >> (int)y);
+        public static byte ShiftRight(this byte x, ulong y) => (byte)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ushort from byte
@@ -1275,211 +1301,428 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte ShiftRight(this byte x, ushort y) => (byte)(x >> y);
+        public static byte ShiftRight(this byte x, ushort y) => (byte)((int)x >> (int)y);
 
         /// <summary>
-        /// Substracts byte from byte
+        /// Subtracts byte from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, byte y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,byte) instead.", false)]
+        public static byte Substract(this byte x, byte y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts char from byte
+        /// Subtracts char from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, char y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,char) instead.", false)]
+        public static byte Substract(this byte x, char y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts decimal from byte
+        /// Subtracts decimal from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, decimal y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,decimal) instead.", false)]
+        public static byte Substract(this byte x, decimal y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts double from byte
+        /// Subtracts double from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, double y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,double) instead.", false)]
+        public static byte Substract(this byte x, double y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts float from byte
+        /// Subtracts float from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, float y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,float) instead.", false)]
+        public static byte Substract(this byte x, float y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts int from byte
+        /// Subtracts int from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, int y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,int) instead.", false)]
+        public static byte Substract(this byte x, int y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts long from byte
+        /// Subtracts long from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, long y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,long) instead.", false)]
+        public static byte Substract(this byte x, long y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts sbyte from byte
+        /// Subtracts sbyte from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, sbyte y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,sbyte) instead.", false)]
+        public static byte Substract(this byte x, sbyte y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts short from byte
+        /// Subtracts short from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, short y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,short) instead.", false)]
+        public static byte Substract(this byte x, short y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts uint from byte
+        /// Subtracts uint from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, uint y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,uint) instead.", false)]
+        public static byte Substract(this byte x, uint y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ulong from byte
+        /// Subtracts ulong from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, ulong y) => (byte)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,ulong) instead.", false)]
+        public static byte Substract(this byte x, ulong y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ushort from byte
+        /// Subtracts ushort from byte
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Substract(this byte x, ushort y) => (byte)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(byte,ushort) instead.", false)]
+        public static byte Substract(this byte x, ushort y) => (byte)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
         public static byte SubstractPercent(this byte value, byte percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
         public static byte SubstractPercent(this byte value, char percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
         public static byte SubstractPercent(this byte value, decimal percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
         public static byte SubstractPercent(this byte value, double percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
         public static byte SubstractPercent(this byte value, float percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
         public static byte SubstractPercent(this byte value, int percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
         public static byte SubstractPercent(this byte value, long percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
         public static byte SubstractPercent(this byte value, sbyte percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
         public static byte SubstractPercent(this byte value, short percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
         public static byte SubstractPercent(this byte value, uint percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
         public static byte SubstractPercent(this byte value, ulong percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
         public static byte SubstractPercent(this byte value, ushort percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, byte y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts char from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, char y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts decimal from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, decimal y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts double from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, double y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts float from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, float y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts int from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, int y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts long from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, long y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts sbyte from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, sbyte y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts short from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, short y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts uint from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, uint y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ulong from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, ulong y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ushort from byte
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static byte Subtract(this byte x, ushort y) => (byte)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, byte percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, char percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, decimal percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, double percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, float percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, int percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, long percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, sbyte percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, short percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, uint percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, ulong percent) => (byte)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static byte SubtractPercent(this byte value, ushort percent) => (byte)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>The <see cref="byte"/></returns>
-        public static byte SwapWith(this byte first, ref byte second)
+        /// <returns>The <see cref="ref byte"/></returns>
+        public static ref byte SwapWith(this ref byte first, ref byte second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1488,7 +1731,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, byte y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, byte y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of char of byte
@@ -1496,7 +1739,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, char y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, char y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of decimal of byte
@@ -1504,7 +1747,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, decimal y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, decimal y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of double of byte
@@ -1512,7 +1755,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, double y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, double y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of float of byte
@@ -1520,7 +1763,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, float y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, float y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of int of byte
@@ -1528,7 +1771,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, int y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, int y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of long of byte
@@ -1536,7 +1779,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, long y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, long y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of sbyte of byte
@@ -1544,7 +1787,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, sbyte y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, sbyte y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of short of byte
@@ -1552,7 +1795,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, short y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, short y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of uint of byte
@@ -1560,7 +1803,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, uint y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, uint y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ulong of byte
@@ -1568,7 +1811,7 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, ulong y) => (byte)(x ^ (int)y);
+        public static byte Xor(this byte x, ulong y) => (byte)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ushort of byte
@@ -1576,6 +1819,6 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static byte Xor(this byte x, ushort y) => (byte)(x ^ y);
+        public static byte Xor(this byte x, ushort y) => (byte)((int)x ^ (int)y);
     }
 }

@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, byte y) => (char)(x + y);
+        public static char Add(this char x, byte y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds char to char
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, char y) => (char)(x + y);
+        public static char Add(this char x, char y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds decimal to char
@@ -40,7 +40,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, decimal y) => (char)(x + (int)y);
+        public static char Add(this char x, decimal y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds double to char
@@ -48,7 +48,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, double y) => (char)(x + (int)y);
+        public static char Add(this char x, double y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds float to char
@@ -56,7 +56,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, float y) => (char)(x + (int)y);
+        public static char Add(this char x, float y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds int to char
@@ -64,7 +64,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, int y) => (char)(x + y);
+        public static char Add(this char x, int y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds long to char
@@ -72,7 +72,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, long y) => (char)(x + (int)y);
+        public static char Add(this char x, long y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds sbyte to char
@@ -80,7 +80,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, sbyte y) => (char)(x + y);
+        public static char Add(this char x, sbyte y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds short to char
@@ -88,7 +88,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, short y) => (char)(x + y);
+        public static char Add(this char x, short y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds uint to char
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, uint y) => (char)(x + (int)y);
+        public static char Add(this char x, uint y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds ulong to char
@@ -104,7 +104,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, ulong y) => (char)(x + (int)y);
+        public static char Add(this char x, ulong y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds ushort to char
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Add(this char x, ushort y) => (char)(x + y);
+        public static char Add(this char x, ushort y) => (char)((int)x + (int)y);
 
         /// <summary>
         /// Adds the percent of the value
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, byte y) => (char)(x & y);
+        public static char And(this char x, byte y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of char and char
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, char y) => (char)(x & y);
+        public static char And(this char x, char y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of decimal and char
@@ -232,7 +232,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, decimal y) => (char)(x & (int)y);
+        public static char And(this char x, decimal y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of double and char
@@ -240,7 +240,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, double y) => (char)(x & (int)y);
+        public static char And(this char x, double y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of float and char
@@ -248,7 +248,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, float y) => (char)(x & (int)y);
+        public static char And(this char x, float y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of int and char
@@ -256,7 +256,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, int y) => (char)(x & y);
+        public static char And(this char x, int y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of long and char
@@ -264,7 +264,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, long y) => (char)(x & (int)y);
+        public static char And(this char x, long y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of sbyte and char
@@ -272,7 +272,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, sbyte y) => (char)(x & y);
+        public static char And(this char x, sbyte y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of short and char
@@ -280,7 +280,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, short y) => (char)(x & y);
+        public static char And(this char x, short y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of uint and char
@@ -288,7 +288,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, uint y) => (char)(x & (int)y);
+        public static char And(this char x, uint y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ulong and char
@@ -296,7 +296,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, ulong y) => (char)(x & (int)y);
+        public static char And(this char x, ulong y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ushort and char
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char And(this char x, ushort y) => (char)(x & y);
+        public static char And(this char x, ushort y) => (char)((int)x & (int)y);
 
         /// <summary>
         /// Tries to cast char to byte, this can get ugly though
@@ -318,35 +318,35 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastCharToDecimal(this char x) => x;
+        public static decimal CastCharToDecimal(this char x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast char to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastCharToDouble(this char x) => x;
+        public static double CastCharToDouble(this char x) => (double)x;
 
         /// <summary>
         /// Tries to cast char to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastCharToFloat(this char x) => x;
+        public static float CastCharToFloat(this char x) => (float)x;
 
         /// <summary>
         /// Tries to cast char to int, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static int CastCharToInt(this char x) => x;
+        public static int CastCharToInt(this char x) => (int)x;
 
         /// <summary>
         /// Tries to cast char to long, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static long CastCharToLong(this char x) => x;
+        public static long CastCharToLong(this char x) => (long)x;
 
         /// <summary>
         /// Tries to cast char to sbyte, this can get ugly though
@@ -367,21 +367,21 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static uint CastCharToUint(this char x) => x;
+        public static uint CastCharToUint(this char x) => (uint)x;
 
         /// <summary>
         /// Tries to cast char to ulong, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static ulong CastCharToUlong(this char x) => x;
+        public static ulong CastCharToUlong(this char x) => (ulong)x;
 
         /// <summary>
         /// Tries to cast char to ushort, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="char"/></param>
         /// <returns>The result of the operation</returns>
-        public static ushort CastCharToUshort(this char x) => x;
+        public static ushort CastCharToUshort(this char x) => (ushort)x;
 
         /// <summary>
         /// Compare original and second number
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static char ChooseHighestValue(this char first, char second) => first > second ? first : second;
+        public static char ChooseIfHigher(this char first, char second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static char ChooseLowestValue(this char first, char second) => first < second ? first : second;
+        public static char ChooseIfLower(this char first, char second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from char
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, byte y) => (char)(x / y);
+        public static char DividedBy(this char x, byte y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides char from char
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, char y) => (char)(x / y);
+        public static char DividedBy(this char x, char y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides decimal from char
@@ -421,7 +421,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, decimal y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, decimal y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides double from char
@@ -429,7 +429,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, double y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, double y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides float from char
@@ -437,7 +437,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, float y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, float y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides int from char
@@ -445,7 +445,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, int y) => (char)(x / y);
+        public static char DividedBy(this char x, int y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides long from char
@@ -453,7 +453,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, long y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, long y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides sbyte from char
@@ -461,7 +461,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, sbyte y) => (char)(x / y);
+        public static char DividedBy(this char x, sbyte y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides short from char
@@ -469,7 +469,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, short y) => (char)(x / y);
+        public static char DividedBy(this char x, short y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides uint from char
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, uint y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, uint y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides ulong from char
@@ -485,7 +485,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, ulong y) => (char)(x / (int)y);
+        public static char DividedBy(this char x, ulong y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Divides ushort from char
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char DividedBy(this char x, ushort y) => (char)(x / y);
+        public static char DividedBy(this char x, ushort y) => (char)((int)x / (int)y);
 
         /// <summary>
         /// Gets a boolean True if char is greater than byte
@@ -906,7 +906,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, byte y) => (char)(x % y);
+        public static char Modulus(this char x, byte y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of char from char
@@ -914,7 +914,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, char y) => (char)(x % y);
+        public static char Modulus(this char x, char y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of decimal from char
@@ -922,7 +922,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, decimal y) => (char)(x % (int)y);
+        public static char Modulus(this char x, decimal y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of double from char
@@ -930,7 +930,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, double y) => (char)(x % (int)y);
+        public static char Modulus(this char x, double y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of float from char
@@ -938,7 +938,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, float y) => (char)(x % (int)y);
+        public static char Modulus(this char x, float y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of int from char
@@ -946,7 +946,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, int y) => (char)(x % y);
+        public static char Modulus(this char x, int y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of long from char
@@ -954,7 +954,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, long y) => (char)(x % (int)y);
+        public static char Modulus(this char x, long y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of sbyte from char
@@ -962,7 +962,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, sbyte y) => (char)(x % y);
+        public static char Modulus(this char x, sbyte y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of short from char
@@ -970,7 +970,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, short y) => (char)(x % y);
+        public static char Modulus(this char x, short y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of uint from char
@@ -978,7 +978,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, uint y) => (char)(x % (int)y);
+        public static char Modulus(this char x, uint y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ulong from char
@@ -986,7 +986,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, ulong y) => (char)(x % (int)y);
+        public static char Modulus(this char x, ulong y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ushort from char
@@ -994,7 +994,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Modulus(this char x, ushort y) => (char)(x % y);
+        public static char Modulus(this char x, ushort y) => (char)((int)x % (int)y);
 
         /// <summary>
         /// Multiplies byte with char
@@ -1002,7 +1002,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, byte y) => (char)(x * y);
+        public static char MultipliedWith(this char x, byte y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies char with char
@@ -1010,7 +1010,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, char y) => (char)(x * y);
+        public static char MultipliedWith(this char x, char y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies decimal with char
@@ -1018,7 +1018,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, decimal y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, decimal y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies double with char
@@ -1026,7 +1026,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, double y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, double y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies float with char
@@ -1034,7 +1034,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, float y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, float y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies int with char
@@ -1042,7 +1042,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, int y) => (char)(x * y);
+        public static char MultipliedWith(this char x, int y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies long with char
@@ -1050,7 +1050,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, long y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, long y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies sbyte with char
@@ -1058,7 +1058,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, sbyte y) => (char)(x * y);
+        public static char MultipliedWith(this char x, sbyte y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies short with char
@@ -1066,7 +1066,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, short y) => (char)(x * y);
+        public static char MultipliedWith(this char x, short y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies uint with char
@@ -1074,7 +1074,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, uint y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, uint y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ulong with char
@@ -1082,7 +1082,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, ulong y) => (char)(x * (int)y);
+        public static char MultipliedWith(this char x, ulong y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ushort with char
@@ -1090,7 +1090,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char MultipliedWith(this char x, ushort y) => (char)(x * y);
+        public static char MultipliedWith(this char x, ushort y) => (char)((int)x * (int)y);
 
         /// <summary>
         /// Gets the NOT of char
@@ -1105,7 +1105,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, byte y) => (char)(x | y);
+        public static char Or(this char x, byte y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and char
@@ -1113,7 +1113,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, char y) => (char)(x | y);
+        public static char Or(this char x, char y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and char
@@ -1121,7 +1121,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, decimal y) => (char)(x | (int)y);
+        public static char Or(this char x, decimal y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of double and char
@@ -1129,7 +1129,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, double y) => (char)(x | (int)y);
+        public static char Or(this char x, double y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of float and char
@@ -1137,7 +1137,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, float y) => (char)(x | (int)y);
+        public static char Or(this char x, float y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of int and char
@@ -1145,7 +1145,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, int y) => (char)(x | y);
+        public static char Or(this char x, int y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and char
@@ -1153,7 +1153,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, long y) => (char)(x | (int)y);
+        public static char Or(this char x, long y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of sbyte and char
@@ -1161,7 +1161,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, sbyte y) => (char)(x | y);
+        public static char Or(this char x, sbyte y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and char
@@ -1169,7 +1169,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, short y) => (char)(x | y);
+        public static char Or(this char x, short y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and char
@@ -1177,7 +1177,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, uint y) => (char)(x | (int)y);
+        public static char Or(this char x, uint y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ulong and char
@@ -1185,7 +1185,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, ulong y) => (char)(x | (int)y);
+        public static char Or(this char x, ulong y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ushort and char
@@ -1193,7 +1193,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Or(this char x, ushort y) => (char)(x | y);
+        public static char Or(this char x, ushort y) => (char)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -1201,7 +1201,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, byte value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, byte value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1209,7 +1209,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, char value) => (char)(percent / ((char)100) * value);
+        public static char PercentOf(this char percent, char value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1217,7 +1217,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, decimal value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, decimal value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1225,7 +1225,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, double value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, double value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1233,7 +1233,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, float value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, float value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1241,7 +1241,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, int value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, int value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1249,7 +1249,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, long value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, long value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1257,7 +1257,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, sbyte value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, sbyte value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1265,7 +1265,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, short value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, short value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1273,7 +1273,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, uint value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, uint value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1281,7 +1281,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, ulong value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, ulong value) => (char)(((char)percent) / ((char)100) * ((char)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1289,7 +1289,33 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static char PercentOf(this char percent, ushort value) => (char)(percent / ((char)100) * ((char)value));
+        public static char PercentOf(this char percent, ushort value) => (char)(((char)percent) / ((char)100) * ((char)value));
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref char SetHighestValueOf(this ref char first, char second, char third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="char"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref char SetLowestValueOf(this ref char first, char second, char third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
 
         /// <summary>
         /// Gets shift left of byte from char
@@ -1297,7 +1323,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, byte y) => (char)(x << y);
+        public static char ShiftLeft(this char x, byte y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of char from char
@@ -1305,7 +1331,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, char y) => (char)(x << y);
+        public static char ShiftLeft(this char x, char y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of decimal from char
@@ -1313,7 +1339,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, decimal y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, decimal y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of double from char
@@ -1321,7 +1347,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, double y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, double y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of float from char
@@ -1329,7 +1355,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, float y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, float y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of int from char
@@ -1337,7 +1363,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, int y) => (char)(x << y);
+        public static char ShiftLeft(this char x, int y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of long from char
@@ -1345,7 +1371,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, long y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, long y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of sbyte from char
@@ -1353,7 +1379,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, sbyte y) => (char)(x << y);
+        public static char ShiftLeft(this char x, sbyte y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of short from char
@@ -1361,7 +1387,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, short y) => (char)(x << y);
+        public static char ShiftLeft(this char x, short y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of uint from char
@@ -1369,7 +1395,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, uint y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, uint y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ulong from char
@@ -1377,7 +1403,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, ulong y) => (char)(x << (int)y);
+        public static char ShiftLeft(this char x, ulong y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ushort from char
@@ -1385,7 +1411,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftLeft(this char x, ushort y) => (char)(x << y);
+        public static char ShiftLeft(this char x, ushort y) => (char)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift right of byte from char
@@ -1393,7 +1419,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, byte y) => (char)(x >> y);
+        public static char ShiftRight(this char x, byte y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of char from char
@@ -1401,7 +1427,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, char y) => (char)(x >> y);
+        public static char ShiftRight(this char x, char y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of decimal from char
@@ -1409,7 +1435,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, decimal y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, decimal y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of double from char
@@ -1417,7 +1443,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, double y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, double y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of float from char
@@ -1425,7 +1451,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, float y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, float y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of int from char
@@ -1433,7 +1459,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, int y) => (char)(x >> y);
+        public static char ShiftRight(this char x, int y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of long from char
@@ -1441,7 +1467,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, long y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, long y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of sbyte from char
@@ -1449,7 +1475,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, sbyte y) => (char)(x >> y);
+        public static char ShiftRight(this char x, sbyte y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of short from char
@@ -1457,7 +1483,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, short y) => (char)(x >> y);
+        public static char ShiftRight(this char x, short y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of uint from char
@@ -1465,7 +1491,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, uint y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, uint y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ulong from char
@@ -1473,7 +1499,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, ulong y) => (char)(x >> (int)y);
+        public static char ShiftRight(this char x, ulong y) => (char)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ushort from char
@@ -1481,211 +1507,428 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char ShiftRight(this char x, ushort y) => (char)(x >> y);
+        public static char ShiftRight(this char x, ushort y) => (char)((int)x >> (int)y);
 
         /// <summary>
-        /// Substracts byte from char
+        /// Subtracts byte from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, byte y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,byte) instead.", false)]
+        public static char Substract(this char x, byte y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts char from char
+        /// Subtracts char from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, char y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,char) instead.", false)]
+        public static char Substract(this char x, char y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts decimal from char
+        /// Subtracts decimal from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, decimal y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,decimal) instead.", false)]
+        public static char Substract(this char x, decimal y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts double from char
+        /// Subtracts double from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, double y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,double) instead.", false)]
+        public static char Substract(this char x, double y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts float from char
+        /// Subtracts float from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, float y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,float) instead.", false)]
+        public static char Substract(this char x, float y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts int from char
+        /// Subtracts int from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, int y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,int) instead.", false)]
+        public static char Substract(this char x, int y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts long from char
+        /// Subtracts long from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, long y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,long) instead.", false)]
+        public static char Substract(this char x, long y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts sbyte from char
+        /// Subtracts sbyte from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, sbyte y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,sbyte) instead.", false)]
+        public static char Substract(this char x, sbyte y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts short from char
+        /// Subtracts short from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, short y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,short) instead.", false)]
+        public static char Substract(this char x, short y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts uint from char
+        /// Subtracts uint from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, uint y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,uint) instead.", false)]
+        public static char Substract(this char x, uint y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ulong from char
+        /// Subtracts ulong from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, ulong y) => (char)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,ulong) instead.", false)]
+        public static char Substract(this char x, ulong y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ushort from char
+        /// Subtracts ushort from char
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Substract(this char x, ushort y) => (char)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(char,ushort) instead.", false)]
+        public static char Substract(this char x, ushort y) => (char)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
         public static char SubstractPercent(this char value, byte percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
         public static char SubstractPercent(this char value, char percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
         public static char SubstractPercent(this char value, decimal percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
         public static char SubstractPercent(this char value, double percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
         public static char SubstractPercent(this char value, float percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
         public static char SubstractPercent(this char value, int percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
         public static char SubstractPercent(this char value, long percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
         public static char SubstractPercent(this char value, sbyte percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
         public static char SubstractPercent(this char value, short percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
         public static char SubstractPercent(this char value, uint percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
         public static char SubstractPercent(this char value, ulong percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
         public static char SubstractPercent(this char value, ushort percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, byte y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts char from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, char y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts decimal from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, decimal y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts double from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, double y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts float from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, float y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts int from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, int y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts long from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, long y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts sbyte from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, sbyte y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts short from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, short y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts uint from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, uint y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ulong from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, ulong y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ushort from char
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static char Subtract(this char x, ushort y) => (char)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, byte percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, char percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, decimal percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, double percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, float percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, int percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, long percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, sbyte percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, short percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, uint percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, ulong percent) => (char)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static char SubtractPercent(this char value, ushort percent) => (char)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>The <see cref="char"/></returns>
-        public static char SwapWith(this char first, ref char second)
+        /// <returns>The <see cref="ref char"/></returns>
+        public static ref char SwapWith(this ref char first, ref char second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1694,7 +1937,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, byte y) => (char)(x ^ y);
+        public static char Xor(this char x, byte y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of char of char
@@ -1702,7 +1945,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, char y) => (char)(x ^ y);
+        public static char Xor(this char x, char y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of decimal of char
@@ -1710,7 +1953,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, decimal y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, decimal y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of double of char
@@ -1718,7 +1961,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, double y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, double y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of float of char
@@ -1726,7 +1969,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, float y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, float y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of int of char
@@ -1734,7 +1977,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, int y) => (char)(x ^ y);
+        public static char Xor(this char x, int y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of long of char
@@ -1742,7 +1985,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, long y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, long y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of sbyte of char
@@ -1750,7 +1993,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, sbyte y) => (char)(x ^ y);
+        public static char Xor(this char x, sbyte y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of short of char
@@ -1758,7 +2001,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, short y) => (char)(x ^ y);
+        public static char Xor(this char x, short y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of uint of char
@@ -1766,7 +2009,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, uint y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, uint y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ulong of char
@@ -1774,7 +2017,7 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, ulong y) => (char)(x ^ (int)y);
+        public static char Xor(this char x, ulong y) => (char)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ushort of char
@@ -1782,6 +2025,6 @@ namespace MarcusMedinaPro.TypedMath.CharExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static char Xor(this char x, ushort y) => (char)(x ^ y);
+        public static char Xor(this char x, ushort y) => (char)((int)x ^ (int)y);
     }
 }

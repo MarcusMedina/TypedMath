@@ -24,7 +24,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, byte y) => (short)(x + y);
+        public static short Add(this short x, byte y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds char to short
@@ -32,7 +32,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, char y) => (short)(x + y);
+        public static short Add(this short x, char y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds decimal to short
@@ -40,7 +40,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, decimal y) => (short)(x + (int)y);
+        public static short Add(this short x, decimal y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds double to short
@@ -48,7 +48,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, double y) => (short)(x + (int)y);
+        public static short Add(this short x, double y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds float to short
@@ -56,7 +56,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, float y) => (short)(x + (int)y);
+        public static short Add(this short x, float y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds int to short
@@ -64,7 +64,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, int y) => (short)(x + y);
+        public static short Add(this short x, int y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds long to short
@@ -72,7 +72,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, long y) => (short)(x + (int)y);
+        public static short Add(this short x, long y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds sbyte to short
@@ -80,7 +80,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, sbyte y) => (short)(x + y);
+        public static short Add(this short x, sbyte y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds short to short
@@ -88,7 +88,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, short y) => (short)(x + y);
+        public static short Add(this short x, short y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds uint to short
@@ -96,7 +96,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, uint y) => (short)(x + (int)y);
+        public static short Add(this short x, uint y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds ulong to short
@@ -104,7 +104,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, ulong y) => (short)(x + (int)y);
+        public static short Add(this short x, ulong y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds ushort to short
@@ -112,7 +112,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Add(this short x, ushort y) => (short)(x + y);
+        public static short Add(this short x, ushort y) => (short)((int)x + (int)y);
 
         /// <summary>
         /// Adds the percent of the value
@@ -216,7 +216,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, byte y) => (short)(x & y);
+        public static short And(this short x, byte y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of char and short
@@ -224,7 +224,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, char y) => (short)(x & y);
+        public static short And(this short x, char y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of decimal and short
@@ -232,7 +232,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, decimal y) => (short)(x & (int)y);
+        public static short And(this short x, decimal y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of double and short
@@ -240,7 +240,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, double y) => (short)(x & (int)y);
+        public static short And(this short x, double y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of float and short
@@ -248,7 +248,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, float y) => (short)(x & (int)y);
+        public static short And(this short x, float y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of int and short
@@ -256,7 +256,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, int y) => (short)(x & y);
+        public static short And(this short x, int y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of long and short
@@ -264,7 +264,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, long y) => (short)(x & (int)y);
+        public static short And(this short x, long y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of sbyte and short
@@ -272,7 +272,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, sbyte y) => (short)(x & y);
+        public static short And(this short x, sbyte y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of short and short
@@ -280,7 +280,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, short y) => (short)(x & y);
+        public static short And(this short x, short y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of uint and short
@@ -288,7 +288,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, uint y) => (short)(x & (int)y);
+        public static short And(this short x, uint y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ulong and short
@@ -296,7 +296,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, ulong y) => (short)(x & (int)y);
+        public static short And(this short x, ulong y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Gets the AND of ushort and short
@@ -304,7 +304,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short And(this short x, ushort y) => (short)(x & y);
+        public static short And(this short x, ushort y) => (short)((int)x & (int)y);
 
         /// <summary>
         /// Tries to cast short to byte, this can get ugly though
@@ -325,35 +325,35 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// </summary>
         /// <param name="x">The x <see cref="short"/></param>
         /// <returns>The result of the operation</returns>
-        public static decimal CastShortToDecimal(this short x) => x;
+        public static decimal CastShortToDecimal(this short x) => (decimal)x;
 
         /// <summary>
         /// Tries to cast short to double, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="short"/></param>
         /// <returns>The result of the operation</returns>
-        public static double CastShortToDouble(this short x) => x;
+        public static double CastShortToDouble(this short x) => (double)x;
 
         /// <summary>
         /// Tries to cast short to float, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="short"/></param>
         /// <returns>The result of the operation</returns>
-        public static float CastShortToFloat(this short x) => x;
+        public static float CastShortToFloat(this short x) => (float)x;
 
         /// <summary>
         /// Tries to cast short to int, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="short"/></param>
         /// <returns>The result of the operation</returns>
-        public static int CastShortToInt(this short x) => x;
+        public static int CastShortToInt(this short x) => (int)x;
 
         /// <summary>
         /// Tries to cast short to long, this can get ugly though
         /// </summary>
         /// <param name="x">The x <see cref="short"/></param>
         /// <returns>The result of the operation</returns>
-        public static long CastShortToLong(this short x) => x;
+        public static long CastShortToLong(this short x) => (long)x;
 
         /// <summary>
         /// Tries to cast short to sbyte, this can get ugly though
@@ -389,7 +389,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The highest of the two numbers</returns>
-        public static short ChooseHighestValue(this short first, short second) => first > second ? first : second;
+        public static short ChooseIfHigher(this short first, short second) => first > second ? first : second;
 
         /// <summary>
         /// Compare original and second number
@@ -397,7 +397,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="first">The number</param>
         /// <param name="second">The number to compare with</param>
         /// <returns>The lowest of the two numbers</returns>
-        public static short ChooseLowestValue(this short first, short second) => first < second ? first : second;
+        public static short ChooseIfLower(this short first, short second) => first < second ? first : second;
 
         /// <summary>
         /// Divides byte from short
@@ -405,7 +405,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, byte y) => (short)(x / y);
+        public static short DividedBy(this short x, byte y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides char from short
@@ -413,7 +413,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, char y) => (short)(x / y);
+        public static short DividedBy(this short x, char y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides decimal from short
@@ -421,7 +421,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, decimal y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, decimal y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides double from short
@@ -429,7 +429,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, double y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, double y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides float from short
@@ -437,7 +437,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, float y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, float y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides int from short
@@ -445,7 +445,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, int y) => (short)(x / y);
+        public static short DividedBy(this short x, int y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides long from short
@@ -453,7 +453,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, long y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, long y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides sbyte from short
@@ -461,7 +461,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, sbyte y) => (short)(x / y);
+        public static short DividedBy(this short x, sbyte y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides short from short
@@ -469,7 +469,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, short y) => (short)(x / y);
+        public static short DividedBy(this short x, short y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides uint from short
@@ -477,7 +477,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, uint y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, uint y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides ulong from short
@@ -485,7 +485,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, ulong y) => (short)(x / (int)y);
+        public static short DividedBy(this short x, ulong y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Divides ushort from short
@@ -493,7 +493,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short DividedBy(this short x, ushort y) => (short)(x / y);
+        public static short DividedBy(this short x, ushort y) => (short)((int)x / (int)y);
 
         /// <summary>
         /// Gets a boolean True if short is greater than byte
@@ -501,7 +501,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this short x, byte y) => x > y;
+        public static bool GreaterThan(this short x, byte y) => x > (short)y;
 
         /// <summary>
         /// Gets a boolean True if short is greater than char
@@ -557,7 +557,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool GreaterThan(this short x, sbyte y) => x > y;
+        public static bool GreaterThan(this short x, sbyte y) => x > (short)y;
 
         /// <summary>
         /// Gets a boolean True if short is greater than short
@@ -597,7 +597,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this short x, byte y) => x == y;
+        public static bool IsEqualTo(this short x, byte y) => x == (short)y;
 
         /// <summary>
         /// Gets boolean True if char is equal to short
@@ -653,7 +653,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsEqualTo(this short x, sbyte y) => x == y;
+        public static bool IsEqualTo(this short x, sbyte y) => x == (short)y;
 
         /// <summary>
         /// Gets boolean True if short is equal to short
@@ -700,7 +700,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this short x, byte y) => x != y;
+        public static bool IsNotEqualTo(this short x, byte y) => x != (short)y;
 
         /// <summary>
         /// Gets boolean True if char is not equal to short
@@ -756,7 +756,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool IsNotEqualTo(this short x, sbyte y) => x != y;
+        public static bool IsNotEqualTo(this short x, sbyte y) => x != (short)y;
 
         /// <summary>
         /// Gets boolean True if short is not equal to short
@@ -810,7 +810,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this short x, byte y) => x < y;
+        public static bool LessThan(this short x, byte y) => x < (short)y;
 
         /// <summary>
         /// Gets a boolean True if short is less than char
@@ -866,7 +866,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static bool LessThan(this short x, sbyte y) => x < y;
+        public static bool LessThan(this short x, sbyte y) => x < (short)y;
 
         /// <summary>
         /// Gets a boolean True if short is less than short
@@ -906,7 +906,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, byte y) => (short)(x % y);
+        public static short Modulus(this short x, byte y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of char from short
@@ -914,7 +914,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, char y) => (short)(x % y);
+        public static short Modulus(this short x, char y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of decimal from short
@@ -922,7 +922,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, decimal y) => (short)(x % (int)y);
+        public static short Modulus(this short x, decimal y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of double from short
@@ -930,7 +930,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, double y) => (short)(x % (int)y);
+        public static short Modulus(this short x, double y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of float from short
@@ -938,7 +938,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, float y) => (short)(x % (int)y);
+        public static short Modulus(this short x, float y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of int from short
@@ -946,7 +946,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, int y) => (short)(x % y);
+        public static short Modulus(this short x, int y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of long from short
@@ -954,7 +954,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, long y) => (short)(x % (int)y);
+        public static short Modulus(this short x, long y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of sbyte from short
@@ -962,7 +962,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, sbyte y) => (short)(x % y);
+        public static short Modulus(this short x, sbyte y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of short from short
@@ -970,7 +970,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, short y) => (short)(x % y);
+        public static short Modulus(this short x, short y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of uint from short
@@ -978,7 +978,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, uint y) => (short)(x % (int)y);
+        public static short Modulus(this short x, uint y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ulong from short
@@ -986,7 +986,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, ulong y) => (short)(x % (int)y);
+        public static short Modulus(this short x, ulong y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Gets the remainder of ushort from short
@@ -994,7 +994,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Modulus(this short x, ushort y) => (short)(x % y);
+        public static short Modulus(this short x, ushort y) => (short)((int)x % (int)y);
 
         /// <summary>
         /// Multiplies byte with short
@@ -1002,7 +1002,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, byte y) => (short)(x * y);
+        public static short MultipliedWith(this short x, byte y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies char with short
@@ -1010,7 +1010,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, char y) => (short)(x * y);
+        public static short MultipliedWith(this short x, char y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies decimal with short
@@ -1018,7 +1018,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, decimal y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, decimal y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies double with short
@@ -1026,7 +1026,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, double y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, double y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies float with short
@@ -1034,7 +1034,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, float y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, float y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies int with short
@@ -1042,7 +1042,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, int y) => (short)(x * y);
+        public static short MultipliedWith(this short x, int y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies long with short
@@ -1050,7 +1050,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, long y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, long y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies sbyte with short
@@ -1058,7 +1058,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, sbyte y) => (short)(x * y);
+        public static short MultipliedWith(this short x, sbyte y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies short with short
@@ -1066,7 +1066,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, short y) => (short)(x * y);
+        public static short MultipliedWith(this short x, short y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies uint with short
@@ -1074,7 +1074,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, uint y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, uint y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ulong with short
@@ -1082,7 +1082,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, ulong y) => (short)(x * (int)y);
+        public static short MultipliedWith(this short x, ulong y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Multiplies ushort with short
@@ -1090,7 +1090,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short MultipliedWith(this short x, ushort y) => (short)(x * y);
+        public static short MultipliedWith(this short x, ushort y) => (short)((int)x * (int)y);
 
         /// <summary>
         /// Gets the NOT of short
@@ -1105,7 +1105,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, byte y) => (short)(x | y);
+        public static short Or(this short x, byte y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of char and short
@@ -1113,7 +1113,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, char y) => (short)(x | y);
+        public static short Or(this short x, char y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of decimal and short
@@ -1121,7 +1121,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, decimal y) => (short)(x | (int)y);
+        public static short Or(this short x, decimal y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of double and short
@@ -1129,7 +1129,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, double y) => (short)(x | (int)y);
+        public static short Or(this short x, double y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of float and short
@@ -1137,7 +1137,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, float y) => (short)(x | (int)y);
+        public static short Or(this short x, float y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of int and short
@@ -1145,7 +1145,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, int y) => (short)(x | y);
+        public static short Or(this short x, int y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of long and short
@@ -1153,7 +1153,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, long y) => (short)(x | (int)y);
+        public static short Or(this short x, long y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of sbyte and short
@@ -1161,7 +1161,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, sbyte y) => (short)(x | y);
+        public static short Or(this short x, sbyte y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of short and short
@@ -1169,7 +1169,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, short y) => (short)(x | y);
+        public static short Or(this short x, short y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of uint and short
@@ -1177,7 +1177,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, uint y) => (short)(x | (int)y);
+        public static short Or(this short x, uint y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ulong and short
@@ -1185,7 +1185,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, ulong y) => (short)(x | (int)y);
+        public static short Or(this short x, ulong y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the OR of ushort and short
@@ -1193,7 +1193,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Or(this short x, ushort y) => (short)(x | y);
+        public static short Or(this short x, ushort y) => (short)((int)x | (int)y);
 
         /// <summary>
         /// Gets the percent of the value
@@ -1201,7 +1201,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, byte value) => (short)(percent / 100 * value);
+        public static short PercentOf(this short percent, byte value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1209,7 +1209,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, char value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, char value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1217,7 +1217,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, decimal value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, decimal value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1225,7 +1225,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, double value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, double value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1233,7 +1233,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, float value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, float value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1241,7 +1241,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, int value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, int value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1249,7 +1249,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, long value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, long value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1257,7 +1257,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, sbyte value) => (short)(percent / 100 * value);
+        public static short PercentOf(this short percent, sbyte value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1265,7 +1265,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, short value) => (short)(percent / 100 * value);
+        public static short PercentOf(this short percent, short value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1273,7 +1273,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, uint value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, uint value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1281,7 +1281,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, ulong value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, ulong value) => (short)(((short)percent) / ((short)100) * ((short)value));
 
         /// <summary>
         /// Gets the percent of the value
@@ -1289,7 +1289,33 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="percent">The amount of percent</param>
         /// <param name="value">The value</param>
         /// <returns>The percent</returns>
-        public static short PercentOf(this short percent, ushort value) => (short)(percent / 100 * ((short)value));
+        public static short PercentOf(this short percent, ushort value) => (short)(((short)percent) / ((short)100) * ((short)value));
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the highest
+        /// </summary>
+        /// <param name="first">The variable</param>
+        /// <param name="second">The number to compare</param>
+        /// <param name="third">The number to compare with</param>
+        /// <returns>Sets the variable to the highest of the two numbers</returns>
+        public static ref short SetHighestValueOf(this ref short first, short second, short third)
+        {
+            first = second > third ? second : third;
+            return ref first;
+        }
+
+        /// <summary>
+        /// Compare original and second number and set the variable with the lowest
+        /// </summary>
+        /// <param name="first">The number</param>
+        /// <param name="second">The number to compare with</param>
+        /// <param name="third">The third <see cref="short"/></param>
+        /// <returns>Sets the variable to the lowest of the two numbers</returns>
+        public static ref short SetLowestValueOf(this ref short first, short second, short third)
+        {
+            first = second < third ? second : third;
+            return ref first;
+        }
 
         /// <summary>
         /// Gets shift left of byte from short
@@ -1297,7 +1323,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, byte y) => (short)(x << y);
+        public static short ShiftLeft(this short x, byte y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of char from short
@@ -1305,7 +1331,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, char y) => (short)(x << y);
+        public static short ShiftLeft(this short x, char y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of decimal from short
@@ -1313,7 +1339,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, decimal y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, decimal y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of double from short
@@ -1321,7 +1347,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, double y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, double y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of float from short
@@ -1329,7 +1355,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, float y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, float y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of int from short
@@ -1337,7 +1363,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, int y) => (short)(x << y);
+        public static short ShiftLeft(this short x, int y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of long from short
@@ -1345,7 +1371,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, long y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, long y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of sbyte from short
@@ -1353,7 +1379,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, sbyte y) => (short)(x << y);
+        public static short ShiftLeft(this short x, sbyte y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of short from short
@@ -1361,7 +1387,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, short y) => (short)(x << y);
+        public static short ShiftLeft(this short x, short y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of uint from short
@@ -1369,7 +1395,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, uint y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, uint y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ulong from short
@@ -1377,7 +1403,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, ulong y) => (short)(x << (int)y);
+        public static short ShiftLeft(this short x, ulong y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift left of ushort from short
@@ -1385,7 +1411,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftLeft(this short x, ushort y) => (short)(x << y);
+        public static short ShiftLeft(this short x, ushort y) => (short)((int)x << (int)y);
 
         /// <summary>
         /// Gets shift right of byte from short
@@ -1393,7 +1419,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, byte y) => (short)(x >> y);
+        public static short ShiftRight(this short x, byte y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of char from short
@@ -1401,7 +1427,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, char y) => (short)(x >> y);
+        public static short ShiftRight(this short x, char y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of decimal from short
@@ -1409,7 +1435,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, decimal y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, decimal y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of double from short
@@ -1417,7 +1443,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, double y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, double y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of float from short
@@ -1425,7 +1451,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, float y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, float y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of int from short
@@ -1433,7 +1459,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, int y) => (short)(x >> y);
+        public static short ShiftRight(this short x, int y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of long from short
@@ -1441,7 +1467,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, long y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, long y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of sbyte from short
@@ -1449,7 +1475,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, sbyte y) => (short)(x >> y);
+        public static short ShiftRight(this short x, sbyte y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of short from short
@@ -1457,7 +1483,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, short y) => (short)(x >> y);
+        public static short ShiftRight(this short x, short y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of uint from short
@@ -1465,7 +1491,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, uint y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, uint y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ulong from short
@@ -1473,7 +1499,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, ulong y) => (short)(x >> (int)y);
+        public static short ShiftRight(this short x, ulong y) => (short)((int)x >> (int)y);
 
         /// <summary>
         /// Gets shift right of ushort from short
@@ -1481,199 +1507,415 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short ShiftRight(this short x, ushort y) => (short)(x >> y);
+        public static short ShiftRight(this short x, ushort y) => (short)((int)x >> (int)y);
 
         /// <summary>
-        /// Substracts byte from short
+        /// Subtracts byte from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, byte y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,byte) instead.", false)]
+        public static short Substract(this short x, byte y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts char from short
+        /// Subtracts char from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, char y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,char) instead.", false)]
+        public static short Substract(this short x, char y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts decimal from short
+        /// Subtracts decimal from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, decimal y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,decimal) instead.", false)]
+        public static short Substract(this short x, decimal y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts double from short
+        /// Subtracts double from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, double y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,double) instead.", false)]
+        public static short Substract(this short x, double y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts float from short
+        /// Subtracts float from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, float y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,float) instead.", false)]
+        public static short Substract(this short x, float y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts int from short
+        /// Subtracts int from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, int y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,int) instead.", false)]
+        public static short Substract(this short x, int y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts long from short
+        /// Subtracts long from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, long y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,long) instead.", false)]
+        public static short Substract(this short x, long y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts sbyte from short
+        /// Subtracts sbyte from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, sbyte y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,sbyte) instead.", false)]
+        public static short Substract(this short x, sbyte y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts short from short
+        /// Subtracts short from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, short y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,short) instead.", false)]
+        public static short Substract(this short x, short y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts uint from short
+        /// Subtracts uint from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, uint y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,uint) instead.", false)]
+        public static short Substract(this short x, uint y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ulong from short
+        /// Subtracts ulong from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, ulong y) => (short)(x - (int)y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,ulong) instead.", false)]
+        public static short Substract(this short x, ulong y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts ushort from short
+        /// Subtracts ushort from short
         /// </summary>
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Substract(this short x, ushort y) => (short)(x - y);
+        [Obsolete("This method is deprecated and will be removed in future versions, please use Subtract(short,ushort) instead.", false)]
+        public static short Substract(this short x, ushort y) => (short)((int)x - (int)y);
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(byte) instead.", false)]
         public static short SubstractPercent(this short value, byte percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(char) instead.", false)]
         public static short SubstractPercent(this short value, char percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(decimal) instead.", false)]
         public static short SubstractPercent(this short value, decimal percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(double) instead.", false)]
         public static short SubstractPercent(this short value, double percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(float) instead.", false)]
         public static short SubstractPercent(this short value, float percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(int) instead.", false)]
         public static short SubstractPercent(this short value, int percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(long) instead.", false)]
         public static short SubstractPercent(this short value, long percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(sbyte) instead.", false)]
         public static short SubstractPercent(this short value, sbyte percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(short) instead.", false)]
         public static short SubstractPercent(this short value, short percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(uint) instead.", false)]
         public static short SubstractPercent(this short value, uint percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ulong) instead.", false)]
         public static short SubstractPercent(this short value, ulong percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
-        /// Substracts the percent of the value
+        /// Subtracts the percent of the value (deprecated)
         /// </summary>
         /// <param name="value">The value</param>
         /// <param name="percent">The amount of percent</param>
         /// <returns>The result</returns>
+        [Obsolete("This method is deprecated and will be removed in future versions, please use SubtractPercent(ushort) instead.", false)]
         public static short SubstractPercent(this short value, ushort percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts byte from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, byte y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts char from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, char y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts decimal from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, decimal y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts double from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, double y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts float from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, float y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts int from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, int y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts long from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, long y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts sbyte from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, sbyte y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts short from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, short y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts uint from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, uint y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ulong from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, ulong y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts ushort from short
+        /// </summary>
+        /// <param name="x">The original value</param>
+        /// <param name="y">The work value</param>
+        /// <returns>The result of the operation</returns>
+        public static short Subtract(this short x, ushort y) => (short)((int)x - (int)y);
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, byte percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, char percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, decimal percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, double percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, float percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, int percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, long percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, sbyte percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, short percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, uint percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, ulong percent) => (short)(value - value.PercentOf(percent));
+
+        /// <summary>
+        /// Subtracts the percent of the value
+        /// </summary>
+        /// <param name="value">The value</param>
+        /// <param name="percent">The amount of percent</param>
+        /// <returns>The result</returns>
+        public static short SubtractPercent(this short value, ushort percent) => (short)(value - value.PercentOf(percent));
 
         /// <summary>
         /// Swaps two variables
@@ -1683,11 +1925,12 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <returns>
         /// The value from the second variable and sets second variable to original value
         /// </returns>
-        public static short SwapWith(this short first, ref short second)
+        public static ref short SwapWith(this ref short first, ref short second)
         {
             var tmp = second;
             second = first;
-            return tmp;
+            first = tmp;
+            return ref first;
         }
 
         /// <summary>
@@ -1696,7 +1939,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, byte y) => (short)(x ^ y);
+        public static short Xor(this short x, byte y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of char of short
@@ -1704,7 +1947,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, char y) => (short)(x ^ y);
+        public static short Xor(this short x, char y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of decimal of short
@@ -1712,7 +1955,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, decimal y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, decimal y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of double of short
@@ -1720,7 +1963,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, double y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, double y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of float of short
@@ -1728,7 +1971,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, float y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, float y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of int of short
@@ -1736,7 +1979,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, int y) => (short)(x ^ y);
+        public static short Xor(this short x, int y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of long of short
@@ -1744,7 +1987,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, long y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, long y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of sbyte of short
@@ -1752,7 +1995,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, sbyte y) => (short)(x ^ y);
+        public static short Xor(this short x, sbyte y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of short of short
@@ -1760,7 +2003,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, short y) => (short)(x ^ y);
+        public static short Xor(this short x, short y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of uint of short
@@ -1768,7 +2011,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, uint y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, uint y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ulong of short
@@ -1776,7 +2019,7 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, ulong y) => (short)(x ^ (int)y);
+        public static short Xor(this short x, ulong y) => (short)((int)x ^ (int)y);
 
         /// <summary>
         /// Gets XOR of ushort of short
@@ -1784,6 +2027,6 @@ namespace MarcusMedinaPro.TypedMath.ShortExtension
         /// <param name="x">The original value</param>
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
-        public static short Xor(this short x, ushort y) => (short)(x ^ y);
+        public static short Xor(this short x, ushort y) => (short)((int)x ^ (int)y);
     }
 }
