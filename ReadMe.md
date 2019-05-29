@@ -1,7 +1,7 @@
 ﻿# Typed Math
 Sometimes when working with calculations I tend to get a touch of Dyscalculia. That is why I loved Visual Basic in the 90s. It had descriptive code, and VB.net does still have it. But I prefer to work with C#. Though I do miss some functions from time to time.
-To avoid visits from the ghost of Discalcula I created this project.
-At first it seemed like a pretty meaningless project, but soon I realized this could be useful. So I made it a nuget.
+To avoid visits from the ghost of Dyscalculia I created this project.
+At first it seemed like a pretty meaningless project, but soon I realised this could be useful. So, I made it a NuGet.
 It's all extensions to number types. 
 
 Instead of writing
@@ -15,7 +15,7 @@ var x = 10.MultipliedWith(32).Add(y);
 
 The package contains namespaces for the most common data types in Visual Studio.
 
-To use the extensions use any of the namespaces
+To use the extensions, use any of the namespaces
 ```C#
 using MarcusMedinaPro.TypedMath.ByteExtension; // Bytes
 using MarcusMedinaPro.TypedMath.CharExtension; // Char
@@ -32,14 +32,12 @@ using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
 
 ## Disclaimer
-This project is nothing magical, actually, most of the functions are oneliners. The idea is not to create complicated functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. If you don't believe me, check the code https://github.com/MarcusMedina/TypedMath
+This project is nothing magical most of the functions are one-liners. The idea is not to create complicated functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. If you don't believe me, check the code https://github.com/MarcusMedina/TypedMath
 
 ## Changes
-20190524 - Added Percent, Highest, Lowest, Swap
-20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf
-           Added SetHighestValueOf/SetLowestValueOf
-           Swap uses reference now
-20190529 - Corrected missspelling in Subtract and added Obsolete tag to the misspelled method
+* 20190524 - Added Percent, Highest, Lowest, Swap
+* 20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf. Added SetHighestValueOf/SetLowestValueOf. Swap uses reference now
+* 20190529 - Corrected misspelling in Subtract and added Obsolete tag to the misspelled method. Renamed ChoseHighest/Lowest to ChooseIfHigher/ChooseIfLower
 
 ## Examples
 Here is the list of functions available for most of the types. In this example I'm using *double*
@@ -135,7 +133,7 @@ Divide, Multiply and Modulus are also available
     res = y.Modulus(x);
 ```
 
-Cast to another type if you don't like using  var x=(int)myDouble;
+Cast to another type if you don't like using var x=(int)myDouble;
 ```C#
     double y = 13.37;
 // byte CastDoubleToByte();
@@ -210,7 +208,7 @@ Choose highest or lowest number and set the variable. It's a as simple as it sou
     var value1 = 50;
     var value2 = 32;
 
-    x.SetHighestValueOf(value1,value2);
+    x.SetHighestValueOf(value1, value2);
     y.SetLowestValueOf(value1, value2);
 ```
 Another nifty function is to be able to check if the current number is a prime number.
@@ -221,14 +219,14 @@ Another nifty function is to be able to check if the current number is a prime n
 ## Source code
 You can find the code at https://github.com/MarcusMedina/TypedMath
 
-## Nuget
-The nuget is available at https://www.nuget.org/packages/TypedMath/
+## NuGet
+The NuGet is available at https://www.nuget.org/packages/TypedMath/
 
 ## Collaboration
-Feel free to add, suggest or request a feature. If you want to help develop this nuget, feel free to senda Pull Request.
+Feel free to add, suggest or request a feature. If you want to help develop this NuGet, feel free to send a Pull Request.
 
 ## Borrowed code
-* LinQ Primenumbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/
+* LinQ Prime numbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/
 
 ## Borrowed Icons
 * The icon is GPL from http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html.
