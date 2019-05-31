@@ -88,7 +88,7 @@ You could go wild and crazy and write
         // or rather Do something if x is equal to y
     }
 
-``
+```
 But that would make the code look weird.
 
 Check if the value is positive or negative
