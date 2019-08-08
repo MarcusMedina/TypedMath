@@ -5,7 +5,8 @@
 // </copyright>
 // ----------------------------------------------------------------------------------------------
 // Credits for borrowed code:
-// LinQ Primenumbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/
+// LinQ Primenumbers, Zoran Horvat, at http://www.codinghelmet.com/articles/linq-all-primes/
+// Increase/Decrease array values, mgp - https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537
 // ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.ByteExtension
@@ -400,6 +401,13 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         public static byte ChooseIfLower(this byte first, byte second) => first < second ? first : second;
 
         /// <summary>
+        /// Converts the array to int.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="int[]"/></returns>
+        public static int[] ConvertArrayToInt(this byte[] array) => array.Select(x => (int)x).ToArray();
+
+        /// <summary>
         /// Divides byte from byte
         /// </summary>
         /// <param name="x">The original value</param>
@@ -494,6 +502,78 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
         public static byte DividedBy(this byte x, ushort y) => (byte)((int)x / (int)y);
+
+        /// <summary>
+        /// Gets the first half of the array.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="byte[]"/></returns>
+        public static byte[] GetFirstHalf(this byte[] array) => array.Take(array.Length / 2).ToArray();
+
+        /// <summary>
+        /// Gets the first number in the array
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>The result of the operation</returns>
+        public static byte GetFirstValue(this byte[] array) => array[0];
+
+        /// <summary>
+        /// Gets the hightest value of the numbers in the array
+        /// </summary>
+        /// <param name="array">The array</param>
+        /// <returns>The hightest value in the array</returns>
+        public static byte GetHighestValue(this byte[] array) => array.Max();
+
+        /// <summary>
+        /// Gets the last half of the array.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="byte[]"/></returns>
+        public static byte[] GetLastHalf(this byte[] array) => array.Skip(array.Length / 2).Take(array.Length / 2).ToArray();
+
+        /// <summary>
+        /// Gets the last number in the array
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>The result of the operation</returns>
+        public static byte GetLastValue(this byte[] array) => array[array.Length - 1];
+
+        /// <summary>
+        /// Peeks the lowest value in the array
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>The lowest value i the array</returns>
+        public static byte GetLowestValue(this byte[] array) => array.Min();
+
+        /// <summary>
+        /// Gets the middle of both halves in the array.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="byte[]"/></returns>
+        public static byte[] GetMiddle(this byte[] array) => array.Skip(array.Length / 4).Take(array.Length / 2).ToArray();
+
+        /// <summary>
+        /// Gets the number in the middle of the array
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>The result of the operation</returns>
+        public static byte GetMiddleValue(this byte[] array) => array[(array.Length - 1) / 2];
+
+        /// <summary>
+        /// Peeks numbers higher than given value in the array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="x">The limit value</param>
+        /// <returns>Returns a new array with all numbers higher than x</returns>
+        public static byte[] GetValuesHigherThan(this byte[] array, byte x) => array.Where(y => y >= x).ToArray();
+
+        /// <summary>
+        /// Peeks numbers lower than given value in the array
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="x">The limit value</param>
+        /// <returns>Returns a new array with all numbers lower than x</returns>
+        public static byte[] GetValuesLowerThan(this byte[] array, byte x) => array.Where(y => y <= x).ToArray();
 
         /// <summary>
         /// Gets boolean True if byte is equal to byte
@@ -1086,6 +1166,32 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         public static byte PercentOf(this byte percent, ushort value) => (byte)(((byte)percent) / ((byte)100) * ((byte)value));
 
         /// <summary>
+        /// Rotates the numbers to the left.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="byte[]"/></returns>
+        public static byte[] RotateLeft(this byte[] array)
+        {
+            var first = array.GetFirstValue();
+            Array.Copy(array, 1, array, 0, array.Length - 1);
+            array[array.Length - 1] = first;
+            return array;
+        }
+
+        /// <summary>
+        /// Rotates the numbers to the right.
+        /// </summary>
+        /// <param name="array">The array.</param>
+        /// <returns>The <see cref="byte[]"/></returns>
+        public static byte[] RotateRight(this byte[] array)
+        {
+            var last = array.GetLastValue();
+            Array.Copy(array, 0, array, 1, array.Length - 1);
+            array[0] = last;
+            return array;
+        }
+
+        /// <summary>
         /// Compare original and second number and set the variable with the highest
         /// </summary>
         /// <param name="first">The variable</param>
@@ -1109,6 +1215,19 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         {
             first = second < third ? second : third;
             return ref first;
+        }
+
+        /// <summary>
+        /// Get the current size of the array
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <param name="size">The size <see cref="int"/></param>
+        /// <returns>The size of the array</returns>
+        public static byte[] SetNewArraySize(this byte[] array, int size)
+        {
+            var newArr = new byte[size];
+            Array.Copy(array, 0, newArr, 0, array.Length);
+            return newArr;
         }
 
         /// <summary>
@@ -1302,6 +1421,20 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="y">The work value</param>
         /// <returns>The result of the operation</returns>
         public static byte ShiftRight(this byte x, ushort y) => (byte)((int)x >> (int)y);
+
+        /// <summary>
+        /// Sorts array from lowest to highest
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>A sorted array</returns>
+        public static byte[] SortArrayAsc(this byte[] array) => array.OrderBy(x => x).ToArray();
+
+        /// <summary>
+        /// Sorts array from highest to lowest
+        /// </summary>
+        /// <param name="array">The array <see cref="byte[]"/></param>
+        /// <returns>A sorted array</returns>
+        public static byte[] SortArrayDesc(this byte[] array) => array.OrderByDescending(x => x).ToArray();
 
         /// <summary>
         /// Subtracts byte from byte
@@ -1716,7 +1849,9 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// </summary>
         /// <param name="first">The main variable</param>
         /// <param name="second">The variable to switch with</param>
-        /// <returns>The <see cref="ref byte"/></returns>
+        /// <returns>
+        /// The value from the second variable and sets second variable to original value
+        /// </returns>
         public static ref byte SwapWith(this ref byte first, ref byte second)
         {
             var tmp = second;

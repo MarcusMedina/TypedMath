@@ -1,8 +1,11 @@
 ﻿# Typed Math
-Sometimes when working with calculations I tend to get a touch of Dyscalculia. That is why I loved Visual Basic in the 90s. It had descriptive code, and VB.net does still have it. But I prefer to work with C#. Though I do miss some functions from time to time.
+Sometimes when working with calculations I tend to get a touch of Dyscalculia. That is why I loved Visual Basic in the 90s. 
+It had descriptive code, and VB.net does still have it. But I prefer to work with C#. Though I do miss some functions from time to time.
 To avoid visits from the ghost of Dyscalculia I created this project.
 At first it seemed like a pretty meaningless project, but soon I realised this could be useful. So, I made it a NuGet.
 It's all extensions to number types. 
+
+LinQ is great and it does offer a lot of ways to make the code more readable, if you use LinQ I see no reason why you should need this package. 
 
 Instead of writing
 ```C#
@@ -32,9 +35,10 @@ using MarcusMedinaPro.TypedMath.UshorttExtension; //Ushort
 Most of the functions have automatic casting from one to another, so you can work with mixed doubles and floats and ints if you want.
 
 ## Disclaimer
-This project is nothing magical most of the functions are one-liners. The idea is not to create complicated functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. If you don't believe me, check the code https://github.com/MarcusMedina/TypedMath
+This project is nothing magical most of the functions are one-liners. The idea is not to create special functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. But if you feel like you want code that will be easy to read, this might help.
 
 ## Changes
+* 10190603 - Added array handlers
 * 20190524 - Added Percent, Highest, Lowest, Swap
 * 20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf. Added SetHighestValueOf/SetLowestValueOf. Swap uses reference now
 * 20190529 - Corrected misspelling in Subtract and added Obsolete tag to the misspelled method. Renamed ChoseHighest/Lowest to ChooseIfHigher/ChooseIfLower
@@ -44,7 +48,7 @@ Here is the list of functions available for most of the types. In this example I
 ```C#
 using MarcusMedinaPro.TypedMath.DoubleExtension; // Double
 ```
-Compares the current double to a value of almost any type.
+Compares the current double to a value of almost any type. Greater than and Less than works fine, but I don't recommend using IsEqual between different types of numbers like ints and doubles. That is just silly.
 
 ```C#
     // bool GreaterThan(...);
@@ -88,7 +92,7 @@ You could go wild and crazy and write
         // or rather Do something if x is equal to y
     }
 
-``
+```
 But that would make the code look weird.
 
 Check if the value is positive or negative
@@ -176,8 +180,6 @@ You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right
     var test5 = 42.ShiftLeft(1);
     var test6 = 24.ShiftRight(1);
 ```
-
-## New features added
 You can get the percent, add and Subtract percent from a value.
 ```C#
     var money = 1500.5;
@@ -199,7 +201,8 @@ Swap values if you'd ever need it.
 ```C#
     var x = 10;
     var y = 20;
-    y.SwapWith(ref x); // x == 20, Y == 10;
+    y.SwapWith(ref x); 
+	// x == 20, Y == 10;
 ```
 Choose highest or lowest number and set the variable. It's a as simple as it sounds.
 ```C#
@@ -216,6 +219,68 @@ Another nifty function is to be able to check if the current number is a prime n
     var x = 5.IsPrime();
 ```
 
+## New features added
+This time I decided to simplify common array functions. Some of them are directly links to LinQ methods, but with a hopefully more descriptive name :)
+```C#
+      All you need is an array with numbers
+      var arr = new double[] { 10,42,20.13,91.4,30,1,3,11,29,46};
+```
+If you don't want to use LinQ you can use this alternative
+```C#
+      var average = arr.GetAverage();
+```
+If you don't like using [0] or array[array.Length - 1] to get the first value and last value, or use array [(array.Length - 1) / 2] to get the value int the middle, you can use this alternatives. 
+Though, in LinQ you can just use arr.Last() and with C#8 you can use arr[^1]
+```C#
+        var first = arr.GetFirstValue();
+        var last = arr.GetLastValue(); 
+        var middle = arr.GetMiddleValue();
+```
+Once again, if you don't want to use LinQ to get highest and lowest value, you can use this more readable alternative
+```C#
+        var highest = arr.GetHighestValue();
+        var lowest = arr.GetLowestValue();
+```
+To filter out values higher/lower of given number without LinQ, use
+```C#
+        var higherThan = arr.GetValuesHigherThan(10);
+        var lowerThan = arr.GetValuesLowerThan(10);
+```
+Sometimes you need to resize an array, this might help
+```C#
+        var newArrSize = arr.SetNewArraySize(150);
+```
+If you need to sort your array and don't want to use LinQ, use this
+```C#
+        var sortAscending = arr.SortArrayAsc();
+        var sortDescending= arr.SortArrayDesc();
+```
+If you need to sum the array and don't want to use LinQ, use this
+```C#
+        var sum = arr.SumAllValues();
+```
+OK I admit it, I wrote this code for fun. It moves all values in the array from left to right and vice versa.
+```C#
+        var left = arr.RotateLeft();
+        var right = arr.RotateRight();
+```
+If you by any reason need to convert the array from whatever numbers to int, and don't want Linq, use this.
+```C#
+        var ints = arr.ConvertArrayToInt();
+```
+If you need to increase all values in the array with a specific value, this is the one for you
+```C#
+        var plusVal = arr.IncreaseAllValuesWith(10);
+        var minusVal = arr.DecreaseAllValuesWith(12);
+```
+And finally some quirky code to get the first or last half of the array, or if you need all the numbers in the middle. 
+```C#
+        var firsthalf = arr.GetFirstHalf();
+        var MiddleValues = arr.GetMiddle();
+        var lastHalf = arr.GetLastHalf();
+```
+
+
 ## Source code
 You can find the code at https://github.com/MarcusMedina/TypedMath
 
@@ -227,6 +292,7 @@ Feel free to add, suggest or request a feature. If you want to help develop this
 
 ## Borrowed code
 * LinQ Prime numbers, Zoran Horvat: http://www.codinghelmet.com/articles/linq-all-primes/
+* Increase/Decrease array values,  mgp (https://stackoverflow.com/users/55943/mqp ) @ https://stackoverflow.com/a/823537 
 
 ## Borrowed Icons
 * The icon is GPL from http://www.iconarchive.com/show/ios7-icons-by-icons8/Science-Math-icon.html.
