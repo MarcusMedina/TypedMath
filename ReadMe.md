@@ -16,6 +16,7 @@ you can write
 var x = 10.MultipliedWith(32).Add(y);
 ```
 
+
 The package contains namespaces for the most common data types in Visual Studio.
 
 To use the extensions, use any of the namespaces
