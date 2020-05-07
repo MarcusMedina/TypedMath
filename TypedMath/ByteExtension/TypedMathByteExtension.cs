@@ -1,13 +1,12 @@
-//----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
 // <copyright file="TypedMathByteExtension.cs" company="MarcusMedinaPro">
-// By Marcus Medina, 2019 - http://MarcusMedina.Pro
-// This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.
+//     By Marcus Medina, 2019 - http://MarcusMedina.Pro This file is subject to the terms and
+//     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code:
-// LinQ Primenumbers, Zoran Horvat, at http://www.codinghelmet.com/articles/linq-all-primes/
-// Increase/Decrease array values, mgp - https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537
-// ----------------------------------------------------------------------------------------------
+// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at
+// http://www.codinghelmet.com/articles/linq-all-primes/ Increase/Decrease array values, mgp -
+// https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.ByteExtension
 {
@@ -406,6 +405,14 @@ namespace MarcusMedinaPro.TypedMath.ByteExtension
         /// <param name="array">The array.</param>
         /// <returns>The <see cref="int[]"/></returns>
         public static int[] ConvertArrayToInt(this byte[] array) => array.Select(x => (int)x).ToArray();
+
+        /// <summary>
+        /// Gets the differnce between two numbers
+        /// </summary>
+        /// <param name="original">The original.</param>
+        /// <param name="compareTo">The compare to.</param>
+        /// <returns></returns>
+        public static byte DiferenceFrom(this byte original, byte compareTo) => (byte)(original > compareTo ? original - compareTo : original < compareTo ? compareTo - original : 0);
 
         /// <summary>
         /// Divides byte from byte
