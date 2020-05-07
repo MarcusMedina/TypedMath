@@ -1,4 +1,4 @@
-﻿//----------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------
 // <copyright file="AssemblyInfo.cs" company="MarcusMedinaPro">
 // By Marcus Medina, 2019 - http://MarcusMedina.Pro
 // This file is subject to the terms and conditions defined in file 'license.txt', which is part of this project.

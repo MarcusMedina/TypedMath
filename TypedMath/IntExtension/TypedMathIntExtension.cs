@@ -4,7 +4,7 @@
 //     conditions defined in file 'license.txt', which is part of this project.
 // </copyright>
 // ----------------------------------------------------------------------------------------------
-// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at http://www.codinghelmet.com/articles/linq-all-primes/ 
+// Credits for borrowed code: LinQ Primenumbers, Zoran Horvat, at http://www.codinghelmet.com/articles/linq-all-primes/
 // Increase/Decrease array values, mgp -https://stackoverflow.com/users/55943/mqp, at https://stackoverflow.com/a/823537 ----------------------------------------------------------------------------------------------
 
 namespace MarcusMedinaPro.TypedMath.IntExtension
