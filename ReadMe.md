@@ -8,18 +8,18 @@ It's all extensions to number types.
 LinQ is great and it does offer a lot of ways to make the code more readable, if you use LinQ I see no reason why you should need this package. 
 
 Instead of writing
-```C#
+```csharp
 var x = 10 * 32 + y;
 ```
 you can write 
-```C#
+```csharp
 var x = 10.MultipliedWith(32).Add(y);
 ```
 
 The package contains namespaces for the most common data types in Visual Studio.
 
 To use the extensions, use any of the namespaces
-```C#
+```csharp
 using MarcusMedinaPro.TypedMath.ByteExtension; // Bytes
 using MarcusMedinaPro.TypedMath.CharExtension; // Char
 using MarcusMedinaPro.TypedMath.DecimalExtension; // Decimal
@@ -38,6 +38,7 @@ Most of the functions have automatic casting from one to another, so you can wor
 This project is nothing magical most of the functions are one-liners. The idea is not to create special functions, but to make the code easier to read. If you're a hardcore coder that love to minimize your code, this is not for you. But if you feel like you want code that will be easy to read, this might help.
 
 ## Changes
+* 20200406 - Added DifferenceFrom
 * 10190603 - Added array handlers
 * 20190524 - Added Percent, Highest, Lowest, Swap
 * 20190526 - Renamed ChoseHighestValue/ChoseLowestValue to ChoseHighestValueOf/ChoseLowestValueOf. Added SetHighestValueOf/SetLowestValueOf. Swap uses reference now
@@ -45,12 +46,12 @@ This project is nothing magical most of the functions are one-liners. The idea i
 
 ## Examples
 Here is the list of functions available for most of the types. In this example I'm using *double*
-```C#
+```csharp
 using MarcusMedinaPro.TypedMath.DoubleExtension; // Double
 ```
 Compares the current double to a value of almost any type. Greater than and Less than works fine, but I don't recommend using IsEqual between different types of numbers like ints and doubles. That is just silly.
 
-```C#
+```csharp
     // bool GreaterThan(...);
     int x = 10;
     double y = 15.2;
@@ -68,7 +69,7 @@ Compares the current double to a value of almost any type. Greater than and Less
 
 Compare if the numbers are equal or not
 (this can be tricky when using decimals though)
-```C#
+```csharp
     // bool IsEqual(...);
     int x = 10;
     double y = 15.2;
@@ -85,7 +86,7 @@ Compare if the numbers are equal or not
 
 ```
 You could go wild and crazy and write
-```C#
+```csharp
     if (!x.IsNotEqualTo(y))
     {
         // Do something if x is not not equal to y
@@ -96,7 +97,7 @@ You could go wild and crazy and write
 But that would make the code look weird.
 
 Check if the value is positive or negative
-```C#
+```csharp
     // bool IsNegative();
 
     double y=-2;
@@ -113,7 +114,7 @@ Check if the value is positive or negative
 ```
 
 Add and Subtract can also be done in typed form.
-```C#
+```csharp
     // double Add(...);
     double y = 12;
     int x=14;
@@ -124,7 +125,7 @@ Add and Subtract can also be done in typed form.
 ```
 
 Divide, Multiply and Modulus are also available
-```C#
+```csharp
     // double DividedBy(...);
     int x = 10;
     double y = 12;
@@ -138,7 +139,7 @@ Divide, Multiply and Modulus are also available
 ```
 
 Cast to another type if you don't like using var x=(int)myDouble;
-```C#
+```csharp
     double y = 13.37;
 // byte CastDoubleToByte();
     var b = y.CastDoubleToByte();
@@ -172,7 +173,7 @@ Cast to another type if you don't like using var x=(int)myDouble;
 ```
 
 You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right on the types that works with those operations (Int, short, sbyte etc)
-```C#
+```csharp
     var test1 = 10.And(2);
     var test2 = 12.Or(2);
     var test3 = 14.Xor(2);
@@ -181,7 +182,7 @@ You can also do bitwise operations And, Or, Xor, Not, Shift left and Shift right
     var test6 = 24.ShiftRight(1);
 ```
 You can get the percent, add and Subtract percent from a value.
-```C#
+```csharp
     var money = 1500.5;
     var x = 15.2.PercentOf(money);
 
@@ -189,7 +190,7 @@ You can get the percent, add and Subtract percent from a value.
     money = money.SubtractPercent(20); // same as money -= 20.PercentOf(money);
 ```
 Choose highest or lowest number. It's a as simple as it sounds.
-```C#
+```csharp
     var value1 = 50;
     var value2 = 32;
 
@@ -198,14 +199,14 @@ Choose highest or lowest number. It's a as simple as it sounds.
 ```
 
 Swap values if you'd ever need it.
-```C#
+```csharp
     var x = 10;
     var y = 20;
     y.SwapWith(ref x); 
 	// x == 20, Y == 10;
 ```
 Choose highest or lowest number and set the variable. It's a as simple as it sounds.
-```C#
+```csharp
     var x = 0;
     var y = 0;
     var value1 = 50;
@@ -215,70 +216,86 @@ Choose highest or lowest number and set the variable. It's a as simple as it sou
     y.SetLowestValueOf(value1, value2);
 ```
 Another nifty function is to be able to check if the current number is a prime number.
-```C#
+```csharp
     var x = 5.IsPrime();
 ```
 
-## New features added
+## Arrays
 This time I decided to simplify common array functions. Some of them are directly links to LinQ methods, but with a hopefully more descriptive name :)
-```C#
+```csharp
       All you need is an array with numbers
       var arr = new double[] { 10,42,20.13,91.4,30,1,3,11,29,46};
 ```
 If you don't want to use LinQ you can use this alternative
-```C#
+```csharp
       var average = arr.GetAverage();
 ```
 If you don't like using [0] or array[array.Length - 1] to get the first value and last value, or use array [(array.Length - 1) / 2] to get the value int the middle, you can use this alternatives. 
 Though, in LinQ you can just use arr.Last() and with C#8 you can use arr[^1]
-```C#
+```csharp
         var first = arr.GetFirstValue();
         var last = arr.GetLastValue(); 
         var middle = arr.GetMiddleValue();
 ```
 Once again, if you don't want to use LinQ to get highest and lowest value, you can use this more readable alternative
-```C#
+```csharp
         var highest = arr.GetHighestValue();
         var lowest = arr.GetLowestValue();
 ```
 To filter out values higher/lower of given number without LinQ, use
-```C#
+```csharp
         var higherThan = arr.GetValuesHigherThan(10);
         var lowerThan = arr.GetValuesLowerThan(10);
 ```
 Sometimes you need to resize an array, this might help
-```C#
+```csharp
         var newArrSize = arr.SetNewArraySize(150);
 ```
 If you need to sort your array and don't want to use LinQ, use this
-```C#
+```csharp
         var sortAscending = arr.SortArrayAsc();
         var sortDescending= arr.SortArrayDesc();
 ```
 If you need to sum the array and don't want to use LinQ, use this
-```C#
+```csharp
         var sum = arr.SumAllValues();
 ```
 OK I admit it, I wrote this code for fun. It moves all values in the array from left to right and vice versa.
-```C#
+```csharp
         var left = arr.RotateLeft();
         var right = arr.RotateRight();
 ```
 If you by any reason need to convert the array from whatever numbers to int, and don't want Linq, use this.
-```C#
+```csharp
         var ints = arr.ConvertArrayToInt();
 ```
 If you need to increase all values in the array with a specific value, this is the one for you
-```C#
+```csharp
         var plusVal = arr.IncreaseAllValuesWith(10);
         var minusVal = arr.DecreaseAllValuesWith(12);
 ```
 And finally some quirky code to get the first or last half of the array, or if you need all the numbers in the middle. 
-```C#
+```csharp
         var firsthalf = arr.GetFirstHalf();
         var MiddleValues = arr.GetMiddle();
         var lastHalf = arr.GetLastHalf();
 ```
+# New function added
+GetDifference from, it gives you the difference between two numbers, positive, negative or just zero
+```csharp
+    var num1 = 100;
+    var num2 = 129;
+    var diff = num1.getDifference(num2); 
+    // diff = 29
+```
+or
+```csharp
+    var num1 = 100;
+    var num2 = 35;
+    var diff = num1.getDifference(num2); 
+    // diff = -65
+```
+
 
 
 ## Source code
